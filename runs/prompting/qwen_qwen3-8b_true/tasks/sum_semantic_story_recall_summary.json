@@ -1,0 +1,19 @@
+{
+  "task": "sum_semantic_story_recall",
+  "repeats_per_stimulus": 5,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Summarizer baseline",
+      "n": 20,
+      "metrics": {
+        "embeddingSimilarity": 0.5987002870825182,
+        "bleuScore": 0.00047532237728421263,
+        "coverage": 3.9,
+        "faithfulness": 4.05,
+        "hallucination": 1.35,
+        "summary_length_words": 118.9
+      }
+    }
+  ]
+}

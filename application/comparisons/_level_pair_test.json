@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-05-03T19:29:42.832267+00:00",
+    "seed": 42,
+    "strict_llm_coverage": false,
+    "scoring": {
+      "human_tie_or_missing": "skip entire trial for all conditions",
+      "llm_tie_or_missing": "0.5 for that condition on that trial",
+      "llm_match_human": 1.0,
+      "llm_no_match": 0.0,
+      "denominator": "n_trials_human_defined (same for each condition)"
+    },
+    "levels": [
+      "biography",
+      "distractor",
+      "reading_level",
+      "redundant"
+    ],
+    "eval_conditions": [
+      "C1",
+      "C2",
+      "C3",
+      "compactor"
+    ],
+    "human_dir": "application/approved_runs",
+    "llm_out_root": "application/out",
+    "task_name": "application_reading_qa",
+    "compactor": {
+      "skipped": false,
+      "root": "application/compactor",
+      "rows_merged_by_model": {
+        "anthropic_claude-opus-4.6": 100,
+        "openai_gpt-5.4": 100,
+        "meta-llama_llama-3-8b-instruct": 100,
+        "meta-llama_llama-3.3-70b-instruct": 100,
+        "qwen_qwen3-30b-a3b-instruct-2507": 100,
+        "qwen_qwen3-30b-a3b-thinking-2507": 100,
+        "qwen_qwen3-8b_thinking_true": 100,
+        "qwen_qwen3-8b_thinking_false": 100,
+        "qwen_qwen3-next-80b-a3b-instruct": 100
+      }
+    }
+  },
+  "models": [
+    {
+      "model": "openai_gpt-5.4",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "score_sum_by_condition": {
+        "C1": 24.0,
+        "C2": 24.0,
+        "C3": 22.5,
+        "compactor": 22.0
+      },
+      "full_match_by_condition": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 2,
+        "compactor": 7
+      },
+      "llm_neutral_trials_by_condition": {
+        "C1": 48,
+        "C2": 48,
+        "C3": 41,
+        "compactor": 30
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5,
+        "C2": 0.5,
+        "C3": 0.46875,
+        "compactor": 0.4583333333333333
+      },
+      "accuracy_C1_C2_C3_mean": 0.4895833333333333,
+      "accuracy_compactor": 0.4583333333333333
+    }
+  ]
+}

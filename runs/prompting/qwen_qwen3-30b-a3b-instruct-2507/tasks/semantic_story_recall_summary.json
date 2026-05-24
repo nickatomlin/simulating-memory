@@ -1,0 +1,43 @@
+{
+  "task": "semantic_story_recall",
+  "n_participants": 50,
+  "stimuli_seed": 42,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Just describe the task",
+      "n": 50,
+      "metrics": {
+        "embeddingSimilarity": 0.9991983308170385,
+        "bleuScore": 0.9786494932418094
+      }
+    },
+    {
+      "condition": "C2",
+      "condition_name": "Task + simulate human psychology experiment",
+      "n": 50,
+      "metrics": {
+        "embeddingSimilarity": 0.9962213328349264,
+        "bleuScore": 0.9401875177055815
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Task + human simulation + limited memory emphasis",
+      "n": 50,
+      "metrics": {
+        "embeddingSimilarity": 0.9830928558166613,
+        "bleuScore": 0.9314612858046489
+      }
+    },
+    {
+      "condition": "C4",
+      "condition_name": "Task + human simulation + limited memory + in-context examples",
+      "n": 50,
+      "metrics": {
+        "embeddingSimilarity": 0.9276522700588895,
+        "bleuScore": 0.8914922314763163
+      }
+    }
+  ]
+}

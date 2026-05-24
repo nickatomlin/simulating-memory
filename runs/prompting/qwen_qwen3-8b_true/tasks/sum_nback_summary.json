@@ -1,0 +1,80 @@
+{
+  "task": "sum_nback",
+  "meta": {
+    "matched_html": true,
+    "html_constants": {
+      "TRIALS_PER_BLOCK": 14,
+      "TARGET_RATIO": 0.3333333333333333,
+      "STIMULUS_MS": 500,
+      "ISI_MS": 2000,
+      "BLOCK_INTRO_MS": 2500,
+      "N_LEVELS": [
+        1,
+        2,
+        3
+      ],
+      "CONSONANTS": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    "temperature": 0.0,
+    "n_repeat": 5,
+    "n_repeats_per_participant": 1,
+    "seed": 123,
+    "conditions": {
+      "C1": "Summarizer baseline"
+    },
+    "total_records": 15
+  },
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Summarizer baseline",
+      "n": 15,
+      "metrics": {
+        "d_prime_mean": 2.08915870609664,
+        "acc_over_14": 0.8095238095238095,
+        "acc_over_answered": 0.9558441558441558,
+        "answered_rate": 0.8380952380952381,
+        "summary_length_words": 29.466666666666665
+      },
+      "breakdown": {
+        "d_prime_by_n": {
+          "1": 0.7823606150488345,
+          "2": 3.6344152003402486,
+          "3": 1.850700302900837
+        },
+        "acc_over_14_by_n": {
+          "1": 0.9857142857142858,
+          "2": 0.6857142857142857,
+          "3": 0.7571428571428571
+        },
+        "answered_rate_by_n": {
+          "1": 1.0,
+          "2": 0.7571428571428571,
+          "3": 0.7571428571428571
+        }
+      }
+    }
+  ]
+}

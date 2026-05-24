@@ -1,0 +1,166 @@
+{
+  "model": {
+    "backend": "openai",
+    "name": "qwen/qwen3-30b-a3b-instruct-2507",
+    "base_url": "https://openrouter.ai/api/v1",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "top_p": 1.0
+  },
+  "run": {
+    "out_dir": "runs/exp1-wm-openrouter",
+    "seed": 42,
+    "max_parallel_participants": 20,
+    "max_parallel_tasks": 10,
+    "repeat": 50
+  },
+  "task_config": {
+    "free_recall": {
+      "words_json_path": "data/words.json",
+      "list_lengths": [
+        10,
+        20,
+        30
+      ],
+      "lists_per_length": 10,
+      "stimuli_seed": 42
+    },
+    "digit_span_forward": {
+      "n_participants": 5,
+      "min_span": 2,
+      "max_span": 20,
+      "sequences_per_span": 2,
+      "stimuli_seed": 42,
+      "prompt_mode": "zero_shot"
+    },
+    "digit_span_reverse": {
+      "n_participants": 5,
+      "min_span": 2,
+      "max_span": 20,
+      "sequences_per_span": 2,
+      "stimuli_seed": 42,
+      "prompt_mode": "zero_shot"
+    },
+    "semantic_story_recall": {
+      "n_participants": 5,
+      "stimuli_seed": 42,
+      "use_judge": true,
+      "recall_max_tokens": 16384
+    },
+    "nback": {
+      "n_repeat": 5,
+      "n_repeats_per_participant": 1,
+      "stimuli_seed": 123,
+      "temperature": 0
+    },
+    "complex_span_math_letters": {
+      "n_participants": 10,
+      "base_seed": 123,
+      "temperature": 0,
+      "calibration_trials": 15
+    },
+    "variable_mapping": {
+      "names_json_path": "data/names.json",
+      "city_json_path": "data/city.json",
+      "n_repeat": 5,
+      "n_runs_per_participant": 3,
+      "stimuli_seed": 42
+    },
+    "word_recognition": {
+      "words_json_path": "data/words.json",
+      "n_repeat": 5,
+      "max_trials_per_game": 100,
+      "stimuli_seed": 42
+    },
+    "factual_qa": {
+      "data_json_path": "data/wikipedia_10docs_questions.json",
+      "n_participants": 5,
+      "n_docs": null,
+      "stimuli_seed": 42
+    },
+    "narrative_qa": {
+      "data_json_path": "data/narrative_QA.json",
+      "n_participants": 5,
+      "n_stories": null,
+      "stimuli_seed": 42
+    },
+    "map_task": {
+      "data_json_path": "data/maps.json",
+      "n_participants": 5,
+      "n_maps": null,
+      "stimuli_seed": 42
+    },
+    "craft_task": {
+      "data_json_path": "data/craft_task.json",
+      "n_participants": 5,
+      "n_tasks": null,
+      "stimuli_seed": 42
+    },
+    "wm_digit_span_forward": {
+      "min_span": 2,
+      "max_span": 20,
+      "sequences_per_span": 2,
+      "stimuli_seed": 42,
+      "temperature": 0.0
+    },
+    "wm_digit_span_reverse": {
+      "min_span": 2,
+      "max_span": 20,
+      "sequences_per_span": 2,
+      "stimuli_seed": 42,
+      "temperature": 0.0
+    },
+    "wm_semantic_story_recall": {
+      "repeats_per_stimulus": 5,
+      "temperature": 0.0
+    },
+    "wm_nback": {
+      "n_repeat": 5,
+      "n_repeats_per_participant": 1,
+      "stimuli_seed": 123,
+      "temperature": 0.0
+    },
+    "wm_word_recognition": {
+      "words_json_path": "data/words.json",
+      "n_repeat": 5,
+      "max_trials_per_game": 100,
+      "stimuli_seed": 42,
+      "temperature": 0.0
+    },
+    "wm_variable_mapping": {
+      "names_json_path": "data/names.json",
+      "city_json_path": "data/city.json",
+      "n_repeat": 5,
+      "stimuli_seed": 42,
+      "temperature": 0.0
+    },
+    "wm_factual_qa": {
+      "data_json_path": "data/wikipedia_10docs_questions.json",
+      "n_participants": 5,
+      "n_docs": null,
+      "stimuli_seed": 42,
+      "temperature": 0.0
+    },
+    "wm_narrative_qa": {
+      "data_json_path": "data/narrative_QA.json",
+      "n_participants": 5,
+      "n_stories": null,
+      "stimuli_seed": 42,
+      "temperature": 0.0
+    },
+    "wm_map_task": {
+      "data_json_path": "data/maps.json",
+      "n_participants": 5,
+      "n_maps": null,
+      "stimuli_seed": 42,
+      "temperature": 0.0
+    },
+    "wm_craft_task": {
+      "data_json_path": "data/craft_task.json",
+      "n_participants": 5,
+      "n_tasks": null,
+      "stimuli_seed": 42,
+      "temperature": 0.0
+    }
+  }
+}

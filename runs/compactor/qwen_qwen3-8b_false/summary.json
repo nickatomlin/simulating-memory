@@ -1,0 +1,93 @@
+{
+  "tasks": [
+    {
+      "task": "wm_digit_span_forward",
+      "n_participants": 1,
+      "stimuli_seed_base": 42,
+      "participant_seeds": [
+        42
+      ],
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 1,
+          "metrics": {
+            "digit_span": 20.0,
+            "exact": 0.3873684210526316,
+            "prefix_acc": 0.5310275778143425,
+            "has_S": 0.9989473684210526,
+            "slot_utilization": 0.7818421052631579
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 0.98,
+              "3": 0.94,
+              "4": 0.9,
+              "5": 0.78,
+              "6": 0.79,
+              "7": 0.7,
+              "8": 0.62,
+              "9": 0.45,
+              "10": 0.32,
+              "11": 0.2,
+              "12": 0.19,
+              "13": 0.12,
+              "14": 0.07,
+              "15": 0.04,
+              "16": 0.08,
+              "17": 0.04,
+              "18": 0.04,
+              "19": 0.02,
+              "20": 0.08
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_digit_span_reverse",
+      "n_participants": 1,
+      "stimuli_seed_base": 42,
+      "participant_seeds": [
+        42
+      ],
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 1,
+          "metrics": {
+            "digit_span": 20.0,
+            "exact": 0.3763157894736842,
+            "has_S": 1.0,
+            "slot_utilization": 0.7784210526315789
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 0.97,
+              "3": 0.89,
+              "4": 0.86,
+              "5": 0.82,
+              "6": 0.8,
+              "7": 0.71,
+              "8": 0.57,
+              "9": 0.47,
+              "10": 0.22,
+              "11": 0.25,
+              "12": 0.13,
+              "13": 0.08,
+              "14": 0.07,
+              "15": 0.08,
+              "16": 0.01,
+              "17": 0.07,
+              "18": 0.06,
+              "19": 0.05,
+              "20": 0.04
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

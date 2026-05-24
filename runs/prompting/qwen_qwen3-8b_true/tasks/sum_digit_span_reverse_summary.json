@@ -1,0 +1,40 @@
+{
+  "task": "sum_digit_span_reverse",
+  "n_participants": 1,
+  "stimuli_seed_base": 42,
+  "participant_seeds": [
+    42
+  ],
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Summarizer baseline",
+      "n": 1,
+      "metrics": {
+        "digit_span": 15.0,
+        "exact": 0.8333333333333334,
+        "has_S": 1.0,
+        "summary_length_words": 46.3
+      },
+      "breakdown": {
+        "exact_by_span": {
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 1.0,
+          "6": 1.0,
+          "7": 1.0,
+          "8": 0.5,
+          "9": 1.0,
+          "10": 1.0,
+          "11": 0.5,
+          "12": 1.0,
+          "13": 1.0,
+          "14": 1.0,
+          "15": 0.5,
+          "16": 0.0
+        }
+      }
+    }
+  ]
+}

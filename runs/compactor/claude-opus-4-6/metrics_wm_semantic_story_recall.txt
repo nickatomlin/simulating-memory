@@ -1,0 +1,3 @@
+task | n   | bleuScore | condition | coverage | embeddingSimilarity | faithfulness | hallucination | slot_utilization
+-----+-----+-----------+-----------+----------+---------------------+--------------+---------------+-----------------
+     | 200 | 0.1987    | C2        | 3.1750   | 0.7367              | 4.9200       | 1.0050        | 1.0000          

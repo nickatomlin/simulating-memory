@@ -1,0 +1,19 @@
+{
+  "task": "wm_semantic_story_recall",
+  "repeats_per_stimulus": 50,
+  "conditions": [
+    {
+      "condition": "C2",
+      "condition_name": "Human cognitive limits framing",
+      "n": 200,
+      "metrics": {
+        "embeddingSimilarity": 0.5088583871112616,
+        "bleuScore": 0.00039946381320129354,
+        "coverage": 3.66,
+        "faithfulness": 4.33,
+        "hallucination": 1.16,
+        "slot_utilization": 0.9825
+      }
+    }
+  ]
+}

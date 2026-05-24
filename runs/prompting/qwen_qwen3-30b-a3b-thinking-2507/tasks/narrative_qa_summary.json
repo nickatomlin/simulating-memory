@@ -1,0 +1,46 @@
+{
+  "task": "narrative_qa",
+  "n_participants": 50,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Just describe the task",
+      "n": 50,
+      "metrics": {
+        "accuracy_mean": 0.9740000000000001,
+        "correct_mean": 9.74,
+        "total_per_story": 10
+      }
+    },
+    {
+      "condition": "C2",
+      "condition_name": "Task + simulate human",
+      "n": 50,
+      "metrics": {
+        "accuracy_mean": 0.948,
+        "correct_mean": 9.48,
+        "total_per_story": 10
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Task + human + limited memory",
+      "n": 50,
+      "metrics": {
+        "accuracy_mean": 0.9259999999999999,
+        "correct_mean": 9.26,
+        "total_per_story": 10
+      }
+    },
+    {
+      "condition": "C4",
+      "condition_name": "Task + human + limited memory + examples",
+      "n": 50,
+      "metrics": {
+        "accuracy_mean": 0.91,
+        "correct_mean": 9.1,
+        "total_per_story": 10
+      }
+    }
+  ]
+}

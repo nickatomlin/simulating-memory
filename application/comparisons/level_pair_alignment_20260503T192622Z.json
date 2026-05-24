@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-05-03T19:26:22.250542+00:00",
+    "seed": 42,
+    "strict_llm_coverage": false,
+    "levels": [
+      "biography",
+      "distractor",
+      "reading_level",
+      "redundant"
+    ],
+    "eval_conditions": [
+      "C1",
+      "C2",
+      "C3",
+      "compactor"
+    ],
+    "human_dir": "application/approved_runs",
+    "llm_out_root": "application/out",
+    "task_name": "application_reading_qa",
+    "compactor": {
+      "skipped": false,
+      "root": "application/compactor",
+      "rows_merged_by_model": {
+        "anthropic_claude-opus-4.6": 100,
+        "openai_gpt-5.4": 100,
+        "meta-llama_llama-3-8b-instruct": 100,
+        "meta-llama_llama-3.3-70b-instruct": 100,
+        "qwen_qwen3-30b-a3b-instruct-2507": 100,
+        "qwen_qwen3-30b-a3b-thinking-2507": 100,
+        "qwen_qwen3-8b_thinking_true": 100,
+        "qwen_qwen3-8b_thinking_false": 100,
+        "qwen_qwen3-next-80b-a3b-instruct": 100
+      }
+    }
+  },
+  "models": [
+    {
+      "model": "anthropic_claude-opus-4.6",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 2
+      },
+      "denom": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 4
+      },
+      "accuracy_by_condition": {
+        "C1": null,
+        "C2": null,
+        "C3": null,
+        "compactor": 0.5
+      },
+      "accuracy_C1_C2_C3_mean": null,
+      "accuracy_compactor": 0.5
+    },
+    {
+      "model": "meta-llama_llama-3-8b-instruct",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 14,
+        "C2": 3,
+        "C3": 5,
+        "compactor": 21
+      },
+      "denom": {
+        "C1": 21,
+        "C2": 10,
+        "C3": 8,
+        "compactor": 37
+      },
+      "accuracy_by_condition": {
+        "C1": 0.6666666666666666,
+        "C2": 0.3,
+        "C3": 0.625,
+        "compactor": 0.5675675675675675
+      },
+      "accuracy_C1_C2_C3_mean": 0.5305555555555556,
+      "accuracy_compactor": 0.5675675675675675
+    },
+    {
+      "model": "meta-llama_llama-3.3-70b-instruct",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 20
+      },
+      "denom": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 1,
+        "compactor": 38
+      },
+      "accuracy_by_condition": {
+        "C1": null,
+        "C2": null,
+        "C3": 0.0,
+        "compactor": 0.5263157894736842
+      },
+      "accuracy_C1_C2_C3_mean": 0.0,
+      "accuracy_compactor": 0.5263157894736842
+    },
+    {
+      "model": "openai_gpt-5.4",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 2,
+        "compactor": 7
+      },
+      "denom": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 7,
+        "compactor": 18
+      },
+      "accuracy_by_condition": {
+        "C1": null,
+        "C2": null,
+        "C3": 0.2857142857142857,
+        "compactor": 0.3888888888888889
+      },
+      "accuracy_C1_C2_C3_mean": 0.2857142857142857,
+      "accuracy_compactor": 0.3888888888888889
+    },
+    {
+      "model": "qwen_qwen3-30b-a3b-instruct-2507",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 12
+      },
+      "denom": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 31
+      },
+      "accuracy_by_condition": {
+        "C1": null,
+        "C2": null,
+        "C3": null,
+        "compactor": 0.3870967741935484
+      },
+      "accuracy_C1_C2_C3_mean": null,
+      "accuracy_compactor": 0.3870967741935484
+    },
+    {
+      "model": "qwen_qwen3-30b-a3b-thinking-2507",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 9,
+        "compactor": 19
+      },
+      "denom": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 16,
+        "compactor": 38
+      },
+      "accuracy_by_condition": {
+        "C1": null,
+        "C2": null,
+        "C3": 0.5625,
+        "compactor": 0.5
+      },
+      "accuracy_C1_C2_C3_mean": 0.5625,
+      "accuracy_compactor": 0.5
+    },
+    {
+      "model": "qwen_qwen3-8b_thinking_false",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 16
+      },
+      "denom": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 33
+      },
+      "accuracy_by_condition": {
+        "C1": null,
+        "C2": null,
+        "C3": null,
+        "compactor": 0.48484848484848486
+      },
+      "accuracy_C1_C2_C3_mean": null,
+      "accuracy_compactor": 0.48484848484848486
+    },
+    {
+      "model": "qwen_qwen3-8b_thinking_true",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 15
+      },
+      "denom": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 31
+      },
+      "accuracy_by_condition": {
+        "C1": null,
+        "C2": null,
+        "C3": null,
+        "compactor": 0.4838709677419355
+      },
+      "accuracy_C1_C2_C3_mean": null,
+      "accuracy_compactor": 0.4838709677419355
+    },
+    {
+      "model": "qwen_qwen3-next-80b-a3b-instruct",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 48,
+      "hits": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 13
+      },
+      "denom": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "compactor": 25
+      },
+      "accuracy_by_condition": {
+        "C1": null,
+        "C2": null,
+        "C3": null,
+        "compactor": 0.52
+      },
+      "accuracy_C1_C2_C3_mean": null,
+      "accuracy_compactor": 0.52
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+task | n | condition | score_max | score_mean | score_min | summary_length_words
+-----+---+-----------+-----------+------------+-----------+---------------------
+     | 5 | C1        | 100       | 87.0000    | 35        | 54.4000             

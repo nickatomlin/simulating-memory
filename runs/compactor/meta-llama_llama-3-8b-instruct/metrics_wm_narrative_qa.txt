@@ -1,0 +1,3 @@
+task | n  | accuracy_mean | condition | correct_mean | slot_utilization | total_per_story
+-----+----+---------------+-----------+--------------+------------------+----------------
+     | 50 | 0.6700        | C2        | 6.7000       | 0.8950           | 10             

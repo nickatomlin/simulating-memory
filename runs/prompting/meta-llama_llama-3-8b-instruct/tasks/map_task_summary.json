@@ -1,0 +1,47 @@
+{
+  "task": "map_task",
+  "n_participants": 50,
+  "n_maps_per_participant": 3,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Just describe the task",
+      "n": 150,
+      "metrics": {
+        "accuracy_mean": 0.8586666666666667,
+        "correct_total": 644,
+        "total_questions": 750
+      }
+    },
+    {
+      "condition": "C2",
+      "condition_name": "Task + simulate human",
+      "n": 150,
+      "metrics": {
+        "accuracy_mean": 0.8440000000000001,
+        "correct_total": 633,
+        "total_questions": 750
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Task + human + limited memory",
+      "n": 150,
+      "metrics": {
+        "accuracy_mean": 0.8240000000000001,
+        "correct_total": 618,
+        "total_questions": 750
+      }
+    },
+    {
+      "condition": "C4",
+      "condition_name": "Task + human + limited memory + examples",
+      "n": 150,
+      "metrics": {
+        "accuracy_mean": 0.704,
+        "correct_total": 528,
+        "total_questions": 750
+      }
+    }
+  ]
+}

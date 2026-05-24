@@ -1,0 +1,45 @@
+{
+  "task": "wm_digit_span_forward",
+  "n_participants": 1,
+  "stimuli_seed_base": 42,
+  "participant_seeds": [
+    42
+  ],
+  "conditions": [
+    {
+      "condition": "C2",
+      "condition_name": "Human cognitive limits framing",
+      "n": 1,
+      "metrics": {
+        "digit_span": 20.0,
+        "exact": 0.73,
+        "prefix_acc": 0.8930963879850348,
+        "has_S": 1.0,
+        "slot_utilization": 0.8836842105263157
+      },
+      "breakdown": {
+        "exact_by_span": {
+          "2": 1.0,
+          "3": 0.99,
+          "4": 1.0,
+          "5": 0.94,
+          "6": 0.97,
+          "7": 0.97,
+          "8": 0.84,
+          "9": 0.86,
+          "10": 0.79,
+          "11": 0.7,
+          "12": 0.6,
+          "13": 0.6,
+          "14": 0.62,
+          "15": 0.47,
+          "16": 0.56,
+          "17": 0.53,
+          "18": 0.51,
+          "19": 0.33,
+          "20": 0.59
+        }
+      }
+    }
+  ]
+}

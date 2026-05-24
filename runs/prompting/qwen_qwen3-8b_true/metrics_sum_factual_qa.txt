@@ -1,0 +1,3 @@
+task | n | accuracy_mean | condition | correct_mean | summary_length_words | total_per_doc
+-----+---+---------------+-----------+--------------+----------------------+--------------
+     | 5 | 0.8200        | C1        | 8.2000       | 130.8000             | 10           

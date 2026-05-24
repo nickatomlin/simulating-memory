@@ -1,0 +1,47 @@
+{
+  "task": "craft_task",
+  "n_participants": 50,
+  "n_tasks_per_participant": 3,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Just describe the task",
+      "n": 150,
+      "metrics": {
+        "accuracy_mean": 0.7053333333333334,
+        "correct_total": 529,
+        "total_questions": 750
+      }
+    },
+    {
+      "condition": "C2",
+      "condition_name": "Task + simulate human",
+      "n": 150,
+      "metrics": {
+        "accuracy_mean": 0.5946666666666667,
+        "correct_total": 446,
+        "total_questions": 750
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Task + human + limited memory",
+      "n": 150,
+      "metrics": {
+        "accuracy_mean": 0.5653333333333334,
+        "correct_total": 424,
+        "total_questions": 750
+      }
+    },
+    {
+      "condition": "C4",
+      "condition_name": "Task + human + limited memory + examples",
+      "n": 150,
+      "metrics": {
+        "accuracy_mean": 0.6853333333333333,
+        "correct_total": 514,
+        "total_questions": 750
+      }
+    }
+  ]
+}

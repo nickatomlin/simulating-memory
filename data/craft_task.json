@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "task": "craft_task_binary_mcq",
+    "n_tasks": 3,
+    "difficulty_levels": ["easy", "medium", "hard"],
+    "questions_per_task": 5,
+    "item_counts": {
+      "easy": 5,
+      "medium": 6,
+      "hard": 7
+    },
+    "notes": [
+      "Each task defines a DAG of crafting rules.",
+      "Rules are written in natural language.",
+      "All recipes are binary combinations: X and Y combine to form Z.",
+      "Each question has exactly two choices (A/B).",
+      "Exactly one choice is derivable from the given crafting rules.",
+      "Item names use letters only."
+    ],
+    "version": "3.0"
+  },
+  "items": [
+    {
+      "task_id": "C2001",
+      "difficulty": "easy",
+      "items": ["A", "B", "C", "D", "E"],
+      "rules_text": [
+        "A and B combine to form C.",
+        "C and D combine to form E.",
+        "B and D combine to form A."
+      ],
+      "questions": [
+        {
+          "q_id": "Q01",
+          "prompt": "Which pair produces C?",
+          "choices": {
+            "Choice 1": "A and D",
+            "Choice 2": "A and B"
+          },
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "prompt": "Which pair produces E?",
+          "choices": {
+            "Choice 1": "C and D",
+            "Choice 2": "B and E"
+          },
+          "answer": "A"
+        },
+        {
+          "q_id": "Q03",
+          "prompt": "Which item is required to craft E?",
+          "choices": {
+            "Choice 1": "A",
+            "Choice 2": "C"
+          },
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "prompt": "Which pair can eventually produce E?",
+          "choices": {
+            "Choice 1": "B and D",
+            "Choice 2": "C and E"
+          },
+          "answer": "A"
+        },
+        {
+          "q_id": "Q05",
+          "prompt": "Which item is never produced by any rule?",
+          "choices": {
+            "Choice 1": "E",
+            "Choice 2": "D"
+          },
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "C2002",
+      "difficulty": "medium",
+      "items": ["A", "B", "C", "D", "E", "F"],
+      "rules_text": [
+        "A and B combine to form D.",
+        "C and D combine to form E.",
+        "B and C combine to form F.",
+        "A and F combine to form C."
+      ],
+      "questions": [
+        {
+          "q_id": "Q01",
+          "prompt": "Which pair produces F?",
+          "choices": {
+            "Choice 1": "B and C",
+            "Choice 2": "D and E"
+          },
+          "answer": "A"
+        },
+        {
+          "q_id": "Q02",
+          "prompt": "Which pair produces E?",
+          "choices": {
+            "Choice 1": "A and B",
+            "Choice 2": "C and D"
+          },
+          "answer": "B"
+        },
+        {
+          "q_id": "Q03",
+          "prompt": "Which item can be crafted using D?",
+          "choices": {
+            "Choice 1": "E",
+            "Choice 2": "B"
+          },
+          "answer": "A"
+        },
+        {
+          "q_id": "Q04",
+          "prompt": "Which pair can eventually produce C?",
+          "choices": {
+            "Choice 1": "E and F",
+            "Choice 2": "A and F"
+          },
+          "answer": "B"
+        },
+        {
+          "q_id": "Q05",
+          "prompt": "Which item is never produced by any rule?",
+          "choices": {
+            "Choice 1": "C",
+            "Choice 2": "B"
+          },
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "C2003",
+      "difficulty": "hard",
+      "items": ["A", "B", "C", "D", "E", "F", "G"],
+      "rules_text": [
+        "A and B combine to form D.",
+        "C and D combine to form E.",
+        "B and F combine to form G.",
+        "E and G combine to form A.",
+        "C and F combine to form B."
+      ],
+      "questions": [
+        {
+          "q_id": "Q01",
+          "prompt": "Which pair produces G?",
+          "choices": {
+            "Choice 1": "B and F",
+            "Choice 2": "C and D"
+          },
+          "answer": "A"
+        },
+        {
+          "q_id": "Q02",
+          "prompt": "Which pair produces A?",
+          "choices": {
+            "Choice 1": "A and B",
+            "Choice 2": "E and G"
+          },
+          "answer": "B"
+        },
+        {
+          "q_id": "Q03",
+          "prompt": "Which item is required to craft E?",
+          "choices": {
+            "Choice 1": "G",
+            "Choice 2": "D"
+          },
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "prompt": "Which pair can eventually produce D?",
+          "choices": {
+            "Choice 1": "A and B",
+            "Choice 2": "E and F"
+          },
+          "answer": "A"
+        },
+        {
+          "q_id": "Q05",
+          "prompt": "Which item is never produced by any rule?",
+          "choices": {
+            "Choice 1": "C",
+            "Choice 2": "E"
+          },
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-05-03T20:44:13.845732+00:00",
+    "seed": 42,
+    "trial_design": "random_two_docs_two_distinct_levels",
+    "n_trials_requested": 10000,
+    "strict_llm_coverage": false,
+    "levels": [
+      "biography",
+      "distractor",
+      "reading_level",
+      "redundant"
+    ],
+    "prompt_conditions": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "eval_conditions": [
+      "C1",
+      "C2",
+      "C3",
+      "compactor"
+    ],
+    "human_dir": "application/approved_runs",
+    "llm_out_root": "application/out",
+    "task_name": "application_reading_qa",
+    "compactor": {
+      "skipped": false,
+      "root": "application/compactor",
+      "rows_merged_by_model": {
+        "anthropic_claude-opus-4.6": 100,
+        "openai_gpt-5.4": 100,
+        "meta-llama_llama-3-8b-instruct": 100,
+        "meta-llama_llama-3.3-70b-instruct": 100,
+        "qwen_qwen3-30b-a3b-instruct-2507": 100,
+        "qwen_qwen3-30b-a3b-thinking-2507": 100,
+        "qwen_qwen3-8b_thinking_true": 100,
+        "qwen_qwen3-8b_thinking_false": 100,
+        "qwen_qwen3-next-80b-a3b-instruct": 100
+      }
+    }
+  },
+  "models": [
+    {
+      "model": "anthropic_claude-opus-4.6",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3361,
+        "C2": 3356,
+        "C3": 2778,
+        "compactor": 3128
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5005212211466865,
+        "C2": 0.49703791469194314,
+        "C3": 0.49194262440233755,
+        "compactor": 0.4920560012584552
+      },
+      "accuracy_C1": 0.5005212211466865,
+      "accuracy_C2": 0.49703791469194314,
+      "accuracy_C3": 0.49194262440233755,
+      "accuracy_compactor": 0.4920560012584552,
+      "n_trial_generation_attempts": 10000
+    },
+    {
+      "model": "meta-llama_llama-3-8b-instruct",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3137,
+        "C2": 3138,
+        "C3": 3196,
+        "compactor": 4114
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.46716306775874905,
+        "C2": 0.4647511848341232,
+        "C3": 0.56596422879405,
+        "compactor": 0.6471606103507944
+      },
+      "accuracy_C1": 0.46716306775874905,
+      "accuracy_C2": 0.4647511848341232,
+      "accuracy_C3": 0.56596422879405,
+      "accuracy_compactor": 0.6471606103507944,
+      "n_trial_generation_attempts": 10000
+    },
+    {
+      "model": "meta-llama_llama-3.3-70b-instruct",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3409,
+        "C2": 3375,
+        "C3": 2824,
+        "compactor": 3057
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5076693968726731,
+        "C2": 0.49985189573459715,
+        "C3": 0.5000885425889853,
+        "compactor": 0.48088721094856063
+      },
+      "accuracy_C1": 0.5076693968726731,
+      "accuracy_C2": 0.49985189573459715,
+      "accuracy_C3": 0.5000885425889853,
+      "accuracy_compactor": 0.48088721094856063,
+      "n_trial_generation_attempts": 10000
+    },
+    {
+      "model": "openai_gpt-5.4",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3370,
+        "C2": 3389,
+        "C3": 2410,
+        "compactor": 2834
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.501861504095309,
+        "C2": 0.501925355450237,
+        "C3": 0.4267752789091553,
+        "compactor": 0.4458077709611452
+      },
+      "accuracy_C1": 0.501861504095309,
+      "accuracy_C2": 0.501925355450237,
+      "accuracy_C3": 0.4267752789091553,
+      "accuracy_compactor": 0.4458077709611452,
+      "n_trial_generation_attempts": 10000
+    },
+    {
+      "model": "qwen_qwen3-30b-a3b-instruct-2507",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3361,
+        "C2": 3458,
+        "C3": 2881,
+        "compactor": 2688
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5005212211466865,
+        "C2": 0.5121445497630331,
+        "C3": 0.5101823977333098,
+        "compactor": 0.4228409627182633
+      },
+      "accuracy_C1": 0.5005212211466865,
+      "accuracy_C2": 0.5121445497630331,
+      "accuracy_C3": 0.5101823977333098,
+      "accuracy_compactor": 0.4228409627182633,
+      "n_trial_generation_attempts": 10000
+    },
+    {
+      "model": "qwen_qwen3-30b-a3b-thinking-2507",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3377,
+        "C2": 3353,
+        "C3": 3269,
+        "compactor": 3492
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5029039463886821,
+        "C2": 0.4965936018957346,
+        "C3": 0.578891446785904,
+        "compactor": 0.5493157149598867
+      },
+      "accuracy_C1": 0.5029039463886821,
+      "accuracy_C2": 0.4965936018957346,
+      "accuracy_C3": 0.578891446785904,
+      "accuracy_compactor": 0.5493157149598867,
+      "n_trial_generation_attempts": 10000
+    },
+    {
+      "model": "qwen_qwen3-8b_thinking_false",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3417,
+        "C2": 3414,
+        "C3": 2879,
+        "compactor": 3435
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5088607594936709,
+        "C2": 0.505627962085308,
+        "C3": 0.5098282273773685,
+        "compactor": 0.5403492213308164
+      },
+      "accuracy_C1": 0.5088607594936709,
+      "accuracy_C2": 0.505627962085308,
+      "accuracy_C3": 0.5098282273773685,
+      "accuracy_compactor": 0.5403492213308164,
+      "n_trial_generation_attempts": 10000
+    },
+    {
+      "model": "qwen_qwen3-8b_thinking_true",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3313,
+        "C2": 3422,
+        "C3": 2784,
+        "compactor": 3345
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.49337304542069993,
+        "C2": 0.5068127962085308,
+        "C3": 0.49300513547016117,
+        "compactor": 0.5261915998112318
+      },
+      "accuracy_C1": 0.49337304542069993,
+      "accuracy_C2": 0.5068127962085308,
+      "accuracy_C3": 0.49300513547016117,
+      "accuracy_compactor": 0.5261915998112318,
+      "n_trial_generation_attempts": 10000
+    },
+    {
+      "model": "qwen_qwen3-next-80b-a3b-instruct",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 10000,
+      "n_trials_human_defined": 8111,
+      "hits": {
+        "C1": 3323,
+        "C2": 3338,
+        "C3": 2790,
+        "compactor": 3523
+      },
+      "denom": {
+        "C1": 6715,
+        "C2": 6752,
+        "C3": 5647,
+        "compactor": 6357
+      },
+      "accuracy_by_condition": {
+        "C1": 0.4948622486969471,
+        "C2": 0.4943720379146919,
+        "C3": 0.4940676465379848,
+        "compactor": 0.5541922290388548
+      },
+      "accuracy_C1": 0.4948622486969471,
+      "accuracy_C2": 0.4943720379146919,
+      "accuracy_C3": 0.4940676465379848,
+      "accuracy_compactor": 0.5541922290388548,
+      "n_trial_generation_attempts": 10000
+    }
+  ]
+}

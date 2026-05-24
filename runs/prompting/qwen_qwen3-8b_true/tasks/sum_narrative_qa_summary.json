@@ -1,0 +1,17 @@
+{
+  "task": "sum_narrative_qa",
+  "n_participants": 5,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Summarizer baseline",
+      "n": 5,
+      "metrics": {
+        "accuracy_mean": 0.86,
+        "correct_mean": 8.6,
+        "total_per_story": 10,
+        "summary_length_words": 90.0
+      }
+    }
+  ]
+}

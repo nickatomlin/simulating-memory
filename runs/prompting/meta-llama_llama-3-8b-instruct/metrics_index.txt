@@ -1,0 +1,10 @@
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_digit_span_forward.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_digit_span_reverse.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_nback.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_semantic_story_recall.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_word_recognition.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_variable_mapping.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_factual_qa.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_narrative_qa.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_map_task.txt
+runs/exp1-wm-openrouter/meta-llama_llama-3-8b-instruct/metrics_craft_task.txt

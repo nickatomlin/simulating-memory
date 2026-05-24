@@ -1,0 +1,17 @@
+{
+  "task": "wm_narrative_qa",
+  "n_participants": 5,
+  "conditions": [
+    {
+      "condition": "C2",
+      "condition_name": "Human cognitive limits framing",
+      "n": 5,
+      "metrics": {
+        "accuracy_mean": 0.64,
+        "correct_mean": 6.4,
+        "total_per_story": 10,
+        "slot_utilization": 0.8
+      }
+    }
+  ]
+}

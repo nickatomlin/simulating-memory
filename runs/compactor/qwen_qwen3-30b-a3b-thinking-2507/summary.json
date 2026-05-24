@@ -1,0 +1,390 @@
+{
+  "tasks": [
+    {
+      "task": "wm_application_reading_qa",
+      "n_participants": 100,
+      "stimuli_seed": 42,
+      "documents_dir": "application/documents",
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 100,
+          "metrics": {
+            "accuracy_mean": 0.9079999999999999,
+            "correct_mean": 9.08,
+            "total_per_document": 10,
+            "slot_utilization": 0.9975
+          },
+          "accuracy": {
+            "n": 100,
+            "mean": 0.908,
+            "std": 0.09346657156438339,
+            "min": 0.7,
+            "max": 1.0
+          },
+          "difficulty": {
+            "n": 100,
+            "mean": 6.09,
+            "std": 1.1584040745784694,
+            "min": 3.0,
+            "max": 7.0,
+            "valid_n": 100,
+            "histogram_1_to_10": {
+              "1": 0,
+              "2": 0,
+              "3": 4,
+              "4": 7,
+              "5": 18,
+              "6": 18,
+              "7": 53,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            }
+          },
+          "parse_errors": {}
+        }
+      ],
+      "overall": {
+        "n": 100,
+        "metrics": {
+          "accuracy_mean": 0.9079999999999999,
+          "correct_mean": 9.08,
+          "total_per_document": 10,
+          "slot_utilization": 0.9975
+        },
+        "accuracy": {
+          "n": 100,
+          "mean": 0.908,
+          "std": 0.09346657156438339,
+          "min": 0.7,
+          "max": 1.0
+        },
+        "difficulty": {
+          "n": 100,
+          "mean": 6.09,
+          "std": 1.1584040745784694,
+          "min": 3.0,
+          "max": 7.0,
+          "valid_n": 100,
+          "histogram_1_to_10": {
+            "1": 0,
+            "2": 0,
+            "3": 4,
+            "4": 7,
+            "5": 18,
+            "6": 18,
+            "7": 53,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          }
+        },
+        "parse_errors": {}
+      },
+      "by_level": {
+        "biography": {
+          "n": 34,
+          "metrics": {
+            "accuracy_mean": 0.9088235294117648,
+            "correct_mean": 9.088235294117647,
+            "total_per_document": 10,
+            "slot_utilization": 1.0
+          },
+          "accuracy": {
+            "n": 34,
+            "mean": 0.9088235294117647,
+            "std": 0.08867537312753726,
+            "min": 0.7,
+            "max": 1.0
+          },
+          "difficulty": {
+            "n": 34,
+            "mean": 6.294117647058823,
+            "std": 1.0154515589195334,
+            "min": 3.0,
+            "max": 7.0,
+            "valid_n": 34,
+            "histogram_1_to_10": {
+              "1": 0,
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 5,
+              "6": 7,
+              "7": 20,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            }
+          },
+          "parse_errors": {}
+        },
+        "distractor": {
+          "n": 28,
+          "metrics": {
+            "accuracy_mean": 0.9107142857142857,
+            "correct_mean": 9.107142857142858,
+            "total_per_document": 10,
+            "slot_utilization": 1.0
+          },
+          "accuracy": {
+            "n": 28,
+            "mean": 0.9107142857142857,
+            "std": 0.08593721011082832,
+            "min": 0.7,
+            "max": 1.0
+          },
+          "difficulty": {
+            "n": 28,
+            "mean": 5.892857142857143,
+            "std": 1.1445300256401476,
+            "min": 4.0,
+            "max": 7.0,
+            "valid_n": 28,
+            "histogram_1_to_10": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 4,
+              "5": 8,
+              "6": 3,
+              "7": 13,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            }
+          },
+          "parse_errors": {}
+        },
+        "reading_level": {
+          "n": 18,
+          "metrics": {
+            "accuracy_mean": 0.8611111111111112,
+            "correct_mean": 8.61111111111111,
+            "total_per_document": 10,
+            "slot_utilization": 0.9861111111111112
+          },
+          "accuracy": {
+            "n": 18,
+            "mean": 0.8611111111111112,
+            "std": 0.10613873985857113,
+            "min": 0.7,
+            "max": 1.0
+          },
+          "difficulty": {
+            "n": 18,
+            "mean": 6.277777777777778,
+            "std": 1.145307118227128,
+            "min": 3.0,
+            "max": 7.0,
+            "valid_n": 18,
+            "histogram_1_to_10": {
+              "1": 0,
+              "2": 0,
+              "3": 1,
+              "4": 1,
+              "5": 1,
+              "6": 4,
+              "7": 11,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            }
+          },
+          "parse_errors": {}
+        },
+        "redundant": {
+          "n": 20,
+          "metrics": {
+            "accuracy_mean": 0.945,
+            "correct_mean": 9.45,
+            "total_per_document": 10,
+            "slot_utilization": 1.0
+          },
+          "accuracy": {
+            "n": 20,
+            "mean": 0.9450000000000001,
+            "std": 0.0804673846971554,
+            "min": 0.7,
+            "max": 1.0
+          },
+          "difficulty": {
+            "n": 20,
+            "mean": 5.85,
+            "std": 1.3143439428094916,
+            "min": 3.0,
+            "max": 7.0,
+            "valid_n": 20,
+            "histogram_1_to_10": {
+              "1": 0,
+              "2": 0,
+              "3": 2,
+              "4": 1,
+              "5": 4,
+              "6": 4,
+              "7": 9,
+              "8": 0,
+              "9": 0,
+              "10": 0
+            }
+          },
+          "parse_errors": {}
+        }
+      },
+      "by_condition_level": {
+        "C2": {
+          "biography": {
+            "n": 34,
+            "metrics": {
+              "accuracy_mean": 0.9088235294117648,
+              "correct_mean": 9.088235294117647,
+              "total_per_document": 10,
+              "slot_utilization": 1.0
+            },
+            "accuracy": {
+              "n": 34,
+              "mean": 0.9088235294117647,
+              "std": 0.08867537312753726,
+              "min": 0.7,
+              "max": 1.0
+            },
+            "difficulty": {
+              "n": 34,
+              "mean": 6.294117647058823,
+              "std": 1.0154515589195334,
+              "min": 3.0,
+              "max": 7.0,
+              "valid_n": 34,
+              "histogram_1_to_10": {
+                "1": 0,
+                "2": 0,
+                "3": 1,
+                "4": 1,
+                "5": 5,
+                "6": 7,
+                "7": 20,
+                "8": 0,
+                "9": 0,
+                "10": 0
+              }
+            },
+            "parse_errors": {}
+          },
+          "distractor": {
+            "n": 28,
+            "metrics": {
+              "accuracy_mean": 0.9107142857142857,
+              "correct_mean": 9.107142857142858,
+              "total_per_document": 10,
+              "slot_utilization": 1.0
+            },
+            "accuracy": {
+              "n": 28,
+              "mean": 0.9107142857142857,
+              "std": 0.08593721011082832,
+              "min": 0.7,
+              "max": 1.0
+            },
+            "difficulty": {
+              "n": 28,
+              "mean": 5.892857142857143,
+              "std": 1.1445300256401476,
+              "min": 4.0,
+              "max": 7.0,
+              "valid_n": 28,
+              "histogram_1_to_10": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 4,
+                "5": 8,
+                "6": 3,
+                "7": 13,
+                "8": 0,
+                "9": 0,
+                "10": 0
+              }
+            },
+            "parse_errors": {}
+          },
+          "reading_level": {
+            "n": 18,
+            "metrics": {
+              "accuracy_mean": 0.8611111111111112,
+              "correct_mean": 8.61111111111111,
+              "total_per_document": 10,
+              "slot_utilization": 0.9861111111111112
+            },
+            "accuracy": {
+              "n": 18,
+              "mean": 0.8611111111111112,
+              "std": 0.10613873985857113,
+              "min": 0.7,
+              "max": 1.0
+            },
+            "difficulty": {
+              "n": 18,
+              "mean": 6.277777777777778,
+              "std": 1.145307118227128,
+              "min": 3.0,
+              "max": 7.0,
+              "valid_n": 18,
+              "histogram_1_to_10": {
+                "1": 0,
+                "2": 0,
+                "3": 1,
+                "4": 1,
+                "5": 1,
+                "6": 4,
+                "7": 11,
+                "8": 0,
+                "9": 0,
+                "10": 0
+              }
+            },
+            "parse_errors": {}
+          },
+          "redundant": {
+            "n": 20,
+            "metrics": {
+              "accuracy_mean": 0.945,
+              "correct_mean": 9.45,
+              "total_per_document": 10,
+              "slot_utilization": 1.0
+            },
+            "accuracy": {
+              "n": 20,
+              "mean": 0.9450000000000001,
+              "std": 0.0804673846971554,
+              "min": 0.7,
+              "max": 1.0
+            },
+            "difficulty": {
+              "n": 20,
+              "mean": 5.85,
+              "std": 1.3143439428094916,
+              "min": 3.0,
+              "max": 7.0,
+              "valid_n": 20,
+              "histogram_1_to_10": {
+                "1": 0,
+                "2": 0,
+                "3": 2,
+                "4": 1,
+                "5": 4,
+                "6": 4,
+                "7": 9,
+                "8": 0,
+                "9": 0,
+                "10": 0
+              }
+            },
+            "parse_errors": {}
+          }
+        }
+      }
+    }
+  ]
+}

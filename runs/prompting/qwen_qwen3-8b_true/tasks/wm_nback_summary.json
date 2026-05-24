@@ -1,0 +1,80 @@
+{
+  "task": "wm_nback",
+  "meta": {
+    "matched_html": true,
+    "html_constants": {
+      "TRIALS_PER_BLOCK": 14,
+      "TARGET_RATIO": 0.3333333333333333,
+      "STIMULUS_MS": 500,
+      "ISI_MS": 2000,
+      "BLOCK_INTRO_MS": 2500,
+      "N_LEVELS": [
+        1,
+        2,
+        3
+      ],
+      "CONSONANTS": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    "temperature": 0.0,
+    "n_repeat": 5,
+    "n_repeats_per_participant": 1,
+    "seed": 123,
+    "conditions": {
+      "C2": "Human cognitive limits framing"
+    },
+    "total_records": 15
+  },
+  "conditions": [
+    {
+      "condition": "C2",
+      "condition_name": "Human cognitive limits framing",
+      "n": 15,
+      "metrics": {
+        "d_prime_mean": 4.3724076820699285,
+        "acc_over_14": 0.5619047619047619,
+        "acc_over_answered": 0.8916916416916417,
+        "answered_rate": 0.6523809523809523,
+        "slot_utilization": 0.7
+      },
+      "breakdown": {
+        "d_prime_by_n": {
+          "1": 5.140742222875737,
+          "2": 4.005417129562309,
+          "3": 3.9710636937717396
+        },
+        "acc_over_14_by_n": {
+          "1": 0.3,
+          "2": 0.7,
+          "3": 0.6857142857142857
+        },
+        "answered_rate_by_n": {
+          "1": 0.3,
+          "2": 0.8285714285714285,
+          "3": 0.8285714285714285
+        }
+      }
+    }
+  ]
+}

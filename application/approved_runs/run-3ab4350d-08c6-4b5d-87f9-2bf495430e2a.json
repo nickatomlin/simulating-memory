@@ -1,0 +1,193 @@
+{
+  "run_id": "run-3ab4350d-08c6-4b5d-87f9-2bf495430e2a",
+  "participant_id": "699ded0aade262546250fa48",
+  "session_id": "session-b65f334e-1870-4ad5-9539-475ba91ff06a",
+  "task_id": "reading-qa",
+  "page": "index.html",
+  "page_number": 1,
+  "story_id": "bio_0010",
+  "story_variant": "redundancy",
+  "started_at": "2026-04-28T14:41:51.178Z",
+  "completed_at": "2026-04-28T14:46:31.610Z",
+  "duration_ms": 280432,
+  "metadata": {
+    "pageLabel": "Page 2",
+    "title": "Lena Maris",
+    "biographyId": "bio_0010",
+    "variantLabel": "Redundancy Rewrite",
+    "pageType": "questions",
+    "linkedPageNumber": 1,
+    "readingPageNumber": 1,
+    "questionPageNumber": 2
+  },
+  "summary": {
+    "answeredCount": 10,
+    "totalQuestions": 10,
+    "correctCount": 10,
+    "accuracy": 1,
+    "accuracyPercent": 100,
+    "difficultyRating": 2,
+    "completionStatus": "submitted",
+    "readingEndReason": "timeout",
+    "readingDurationMs": 180000
+  },
+  "payload": {
+    "readingPage": {
+      "pageNumber": 1,
+      "pageType": "reading",
+      "storyId": "bio_0010",
+      "biographyId": "bio_0010",
+      "storyVariant": "redundancy",
+      "variantLabel": "Redundancy Rewrite",
+      "title": "Lena Maris",
+      "sourcePath": "documents/document_010.json"
+    },
+    "questionPage": {
+      "pageNumber": 2,
+      "pageType": "questions",
+      "storyId": "bio_0010",
+      "biographyId": "bio_0010",
+      "storyVariant": "redundancy",
+      "variantLabel": "Redundancy Rewrite",
+      "title": "Lena Maris",
+      "sourcePath": "documents/document_010.json"
+    },
+    "sampledDocuments": [
+      {
+        "order": 1,
+        "biographyId": "bio_0010",
+        "title": "Lena Maris",
+        "sourcePath": "documents/document_010.json",
+        "assignedVariant": "redundancy",
+        "assignedVariantLabel": "Redundancy Rewrite",
+        "readingPageNumber": 1,
+        "questionPageNumber": 2
+      }
+    ],
+    "reading": {
+      "endReason": "timeout",
+      "readingDurationMs": 180000,
+      "startedAtMs": 1777387317241,
+      "finishedAtMs": 1777387497254
+    },
+    "answers": [
+      {
+        "qId": "Q01",
+        "selectedOption": "A"
+      },
+      {
+        "qId": "Q02",
+        "selectedOption": "B"
+      },
+      {
+        "qId": "Q03",
+        "selectedOption": "C"
+      },
+      {
+        "qId": "Q04",
+        "selectedOption": "D"
+      },
+      {
+        "qId": "Q05",
+        "selectedOption": "C"
+      },
+      {
+        "qId": "Q06",
+        "selectedOption": "B"
+      },
+      {
+        "qId": "Q07",
+        "selectedOption": "C"
+      },
+      {
+        "qId": "Q08",
+        "selectedOption": "B"
+      },
+      {
+        "qId": "Q09",
+        "selectedOption": "C"
+      },
+      {
+        "qId": "Q10",
+        "selectedOption": "B"
+      }
+    ],
+    "scoredAnswers": [
+      {
+        "qId": "Q01",
+        "selectedOption": "A",
+        "correctOption": "A",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q02",
+        "selectedOption": "B",
+        "correctOption": "B",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q03",
+        "selectedOption": "C",
+        "correctOption": "C",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q04",
+        "selectedOption": "D",
+        "correctOption": "D",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q05",
+        "selectedOption": "C",
+        "correctOption": "C",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q06",
+        "selectedOption": "B",
+        "correctOption": "B",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q07",
+        "selectedOption": "C",
+        "correctOption": "C",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q08",
+        "selectedOption": "B",
+        "correctOption": "B",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q09",
+        "selectedOption": "C",
+        "correctOption": "C",
+        "isCorrect": true
+      },
+      {
+        "qId": "Q10",
+        "selectedOption": "B",
+        "correctOption": "B",
+        "isCorrect": true
+      }
+    ],
+    "difficultyRating": 2,
+    "linkedReadingPageNumber": 1,
+    "scoring": {
+      "correctCount": 10,
+      "totalQuestions": 10,
+      "accuracy": 1,
+      "accuracyPercent": 100
+    }
+  },
+  "status": "completed",
+  "request": {
+    "remote_addr": "10.1.28.37",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+  },
+  "updated_at": "2026-04-28T14:46:32Z",
+  "created_at": "2026-04-28T14:41:51Z"
+}

@@ -1,0 +1,18 @@
+{
+  "task": "sum_craft_task",
+  "n_participants": 5,
+  "n_tasks_per_participant": 3,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Summarizer baseline",
+      "n": 15,
+      "metrics": {
+        "accuracy_mean": 1.0,
+        "correct_total": 75,
+        "total_questions": 75,
+        "summary_length_words": 70.33333333333333
+      }
+    }
+  ]
+}

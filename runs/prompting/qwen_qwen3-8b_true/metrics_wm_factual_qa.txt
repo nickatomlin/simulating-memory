@@ -1,0 +1,3 @@
+task | n | accuracy_mean | condition | correct_mean | slot_utilization | total_per_doc
+-----+---+---------------+-----------+--------------+------------------+--------------
+     | 5 | 0.8200        | C2        | 8.2000       | 0.9500           | 10           

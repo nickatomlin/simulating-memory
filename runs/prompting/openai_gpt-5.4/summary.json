@@ -1,0 +1,864 @@
+{
+  "tasks": [
+    {
+      "task": "digit_span_forward",
+      "n_participants": 50,
+      "stimuli_seed_base": 42,
+      "participant_seeds": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 50,
+          "metrics": {
+            "digit_span": 20.0,
+            "exact": 0.9994736842105263,
+            "prefix_acc": 0.9995789473684211
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 0.99,
+              "6": 1.0,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 1.0,
+              "16": 1.0,
+              "17": 1.0,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 1.0
+            }
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human psychology experiment",
+          "n": 50,
+          "metrics": {
+            "digit_span": 20.0,
+            "exact": 1.0,
+            "prefix_acc": 1.0
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 1.0,
+              "16": 1.0,
+              "17": 1.0,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 1.0
+            }
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human simulation + limited memory emphasis",
+          "n": 50,
+          "metrics": {
+            "digit_span": 20.0,
+            "exact": 0.983157894736842,
+            "prefix_acc": 0.9974037008109845
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 0.99,
+              "8": 0.98,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 0.96,
+              "12": 0.96,
+              "13": 0.96,
+              "14": 0.96,
+              "15": 0.96,
+              "16": 0.98,
+              "17": 0.97,
+              "18": 0.97,
+              "19": 0.99,
+              "20": 1.0
+            }
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human simulation + limited memory + in-context examples",
+          "n": 50,
+          "metrics": {
+            "digit_span": 8.3,
+            "exact": 0.8174898989898991,
+            "prefix_acc": 0.9535921645484146
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 0.98,
+              "7": 0.95,
+              "8": 0.46938775510204084,
+              "9": 0.21428571428571427,
+              "10": 0.36666666666666664,
+              "11": 0.4444444444444444,
+              "12": 0.08333333333333333,
+              "13": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "digit_span_reverse",
+      "n_participants": 50,
+      "stimuli_seed_base": 42,
+      "participant_seeds": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 50,
+          "metrics": {
+            "digit_span": 20.0,
+            "exact": 0.9994736842105263
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 0.99,
+              "16": 1.0,
+              "17": 1.0,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 1.0
+            }
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human psychology experiment",
+          "n": 50,
+          "metrics": {
+            "digit_span": 20.0,
+            "exact": 0.9994736842105263
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 1.0,
+              "16": 1.0,
+              "17": 1.0,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 0.99
+            }
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human simulation + limited memory emphasis",
+          "n": 50,
+          "metrics": {
+            "digit_span": 19.88,
+            "exact": 0.9954135338345864
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 0.99,
+              "14": 1.0,
+              "15": 0.97,
+              "16": 0.9897959183673469,
+              "17": 0.9897959183673469,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 0.9795918367346939
+            }
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human simulation + limited memory + in-context examples",
+          "n": 50,
+          "metrics": {
+            "digit_span": 8.96,
+            "exact": 0.817314935064935
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 0.92,
+              "8": 0.5408163265306123,
+              "9": 0.5555555555555556,
+              "10": 0.5517241379310345,
+              "11": 0.20833333333333334,
+              "12": 0.05555555555555555,
+              "13": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "nback",
+      "meta": {
+        "matched_html": true,
+        "html_constants": {
+          "TRIALS_PER_BLOCK": 14,
+          "TARGET_RATIO": 0.3333333333333333,
+          "STIMULUS_MS": 500,
+          "ISI_MS": 2000,
+          "BLOCK_INTRO_MS": 2500,
+          "N_LEVELS": [
+            1,
+            2,
+            3
+          ],
+          "CONSONANTS": [
+            "B",
+            "C",
+            "D",
+            "F",
+            "G",
+            "H",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"
+          ]
+        },
+        "temperature": 0.0,
+        "n_repeat": 50,
+        "n_repeats_per_participant": 1,
+        "seed": 123,
+        "conditions": {
+          "C1": "Just describe the task",
+          "C2": "Task + simulate human psychology experiment",
+          "C3": "Task + human simulation + limited memory emphasis",
+          "C4": "Task + human simulation + limited memory + in-context examples"
+        },
+        "total_records": 600
+      },
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 150,
+          "metrics": {
+            "d_prime_mean": 1.9357805739963971,
+            "acc_over_14": 0.930952380952381,
+            "acc_over_answered": 0.930952380952381,
+            "answered_rate": 1.0
+          },
+          "breakdown": {
+            "d_prime_by_n": {
+              "1": 0.0,
+              "2": 1.1735409225732516,
+              "3": 4.6338007994159405
+            },
+            "acc_over_14_by_n": {
+              "1": 1.0,
+              "2": 0.9757142857142856,
+              "3": 0.8171428571428571
+            },
+            "answered_rate_by_n": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0
+            }
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human psychology experiment",
+          "n": 150,
+          "metrics": {
+            "d_prime_mean": 1.974225992138838,
+            "acc_over_14": 0.9266666666666666,
+            "acc_over_answered": 0.9266666666666666,
+            "answered_rate": 1.0
+          },
+          "breakdown": {
+            "d_prime_by_n": {
+              "1": 0.0,
+              "2": 1.400605941235472,
+              "3": 4.522072035181042
+            },
+            "acc_over_14_by_n": {
+              "1": 1.0,
+              "2": 0.9671428571428571,
+              "3": 0.8128571428571427
+            },
+            "answered_rate_by_n": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0
+            }
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human simulation + limited memory emphasis",
+          "n": 150,
+          "metrics": {
+            "d_prime_mean": 1.990609352968089,
+            "acc_over_14": 0.9228571428571428,
+            "acc_over_answered": 0.9228571428571428,
+            "answered_rate": 1.0
+          },
+          "breakdown": {
+            "d_prime_by_n": {
+              "1": 0.0,
+              "2": 1.4755788057737351,
+              "3": 4.496249253130532
+            },
+            "acc_over_14_by_n": {
+              "1": 1.0,
+              "2": 0.962857142857143,
+              "3": 0.8057142857142857
+            },
+            "answered_rate_by_n": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0
+            }
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human simulation + limited memory + in-context examples",
+          "n": 150,
+          "metrics": {
+            "d_prime_mean": 1.9262812574825223,
+            "acc_over_14": 0.9161904761904761,
+            "acc_over_answered": 0.9161904761904761,
+            "answered_rate": 1.0
+          },
+          "breakdown": {
+            "d_prime_by_n": {
+              "1": 0.0,
+              "2": 1.199587894441312,
+              "3": 4.579255878006254
+            },
+            "acc_over_14_by_n": {
+              "1": 1.0,
+              "2": 0.9728571428571429,
+              "3": 0.7757142857142857
+            },
+            "answered_rate_by_n": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "semantic_story_recall",
+      "n_participants": 50,
+      "stimuli_seed": 42,
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 50,
+          "metrics": {
+            "embeddingSimilarity": 0.9349875166685441,
+            "bleuScore": 0.7038277084957264
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human psychology experiment",
+          "n": 50,
+          "metrics": {
+            "embeddingSimilarity": 0.87135892082613,
+            "bleuScore": 0.46788785565300395
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human simulation + limited memory emphasis",
+          "n": 50,
+          "metrics": {
+            "embeddingSimilarity": 0.7766579437420986,
+            "bleuScore": 0.18526578535331806
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human simulation + limited memory + in-context examples",
+          "n": 50,
+          "metrics": {
+            "embeddingSimilarity": 0.6768128060840355,
+            "bleuScore": 0.07013432309910918
+          }
+        }
+      ]
+    },
+    {
+      "task": "word_recognition",
+      "n_participants": 50,
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 50,
+          "metrics": {
+            "score_mean": 100.0,
+            "score_min": 100,
+            "score_max": 100
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human psychology experiment",
+          "n": 50,
+          "metrics": {
+            "score_mean": 100.0,
+            "score_min": 100,
+            "score_max": 100
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human simulation + limited memory emphasis",
+          "n": 50,
+          "metrics": {
+            "score_mean": 100.0,
+            "score_min": 100,
+            "score_max": 100
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human simulation + limited memory + in-context examples",
+          "n": 50,
+          "metrics": {
+            "score_mean": 99.9,
+            "score_min": 99,
+            "score_max": 100
+          }
+        }
+      ]
+    },
+    {
+      "task": "variable_mapping",
+      "n_participants": 50,
+      "n_runs_per_participant": 3,
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 150,
+          "n_participants": 50,
+          "n_runs_per_participant": 3,
+          "metrics": {
+            "score_mean": 8.84,
+            "score_min": 2,
+            "score_max": 10
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human",
+          "n": 150,
+          "n_participants": 50,
+          "n_runs_per_participant": 3,
+          "metrics": {
+            "score_mean": 9.96,
+            "score_min": 8,
+            "score_max": 10
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human + limited memory",
+          "n": 150,
+          "n_participants": 50,
+          "n_runs_per_participant": 3,
+          "metrics": {
+            "score_mean": 10.0,
+            "score_min": 10,
+            "score_max": 10
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human + limited memory + examples",
+          "n": 150,
+          "n_participants": 50,
+          "n_runs_per_participant": 3,
+          "metrics": {
+            "score_mean": 10.0,
+            "score_min": 10,
+            "score_max": 10
+          }
+        }
+      ]
+    },
+    {
+      "task": "factual_qa",
+      "n_participants": 50,
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 50,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_mean": 10.0,
+            "total_per_doc": 10
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human",
+          "n": 50,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_mean": 10.0,
+            "total_per_doc": 10
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human + limited memory",
+          "n": 50,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_mean": 10.0,
+            "total_per_doc": 10
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human + limited memory + examples",
+          "n": 50,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_mean": 10.0,
+            "total_per_doc": 10
+          }
+        }
+      ]
+    },
+    {
+      "task": "narrative_qa",
+      "n_participants": 50,
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 50,
+          "metrics": {
+            "accuracy_mean": 0.98,
+            "correct_mean": 9.8,
+            "total_per_story": 10
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human",
+          "n": 50,
+          "metrics": {
+            "accuracy_mean": 0.966,
+            "correct_mean": 9.66,
+            "total_per_story": 10
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human + limited memory",
+          "n": 50,
+          "metrics": {
+            "accuracy_mean": 0.99,
+            "correct_mean": 9.9,
+            "total_per_story": 10
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human + limited memory + examples",
+          "n": 50,
+          "metrics": {
+            "accuracy_mean": 0.976,
+            "correct_mean": 9.76,
+            "total_per_story": 10
+          }
+        }
+      ]
+    },
+    {
+      "task": "map_task",
+      "n_participants": 50,
+      "n_maps_per_participant": 3,
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 150,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_total": 750,
+            "total_questions": 750
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human",
+          "n": 150,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_total": 750,
+            "total_questions": 750
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human + limited memory",
+          "n": 150,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_total": 750,
+            "total_questions": 750
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human + limited memory + examples",
+          "n": 150,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_total": 750,
+            "total_questions": 750
+          }
+        }
+      ]
+    },
+    {
+      "task": "craft_task",
+      "n_participants": 50,
+      "n_tasks_per_participant": 3,
+      "conditions": [
+        {
+          "condition": "C1",
+          "condition_name": "Just describe the task",
+          "n": 150,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_total": 750,
+            "total_questions": 750
+          }
+        },
+        {
+          "condition": "C2",
+          "condition_name": "Task + simulate human",
+          "n": 150,
+          "metrics": {
+            "accuracy_mean": 0.9893333333333334,
+            "correct_total": 742,
+            "total_questions": 750
+          }
+        },
+        {
+          "condition": "C3",
+          "condition_name": "Task + human + limited memory",
+          "n": 150,
+          "metrics": {
+            "accuracy_mean": 0.8666666666666667,
+            "correct_total": 650,
+            "total_questions": 750
+          }
+        },
+        {
+          "condition": "C4",
+          "condition_name": "Task + human + limited memory + examples",
+          "n": 150,
+          "metrics": {
+            "accuracy_mean": 1.0,
+            "correct_total": 750,
+            "total_questions": 750
+          }
+        }
+      ]
+    }
+  ]
+}

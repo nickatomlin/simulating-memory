@@ -1,0 +1,18 @@
+{
+  "task": "wm_map_task",
+  "n_participants": 5,
+  "n_maps_per_participant": 3,
+  "conditions": [
+    {
+      "condition": "C2",
+      "condition_name": "Human cognitive limits framing",
+      "n": 15,
+      "metrics": {
+        "accuracy_mean": 0.84,
+        "correct_total": 63,
+        "total_questions": 75,
+        "slot_utilization": 0.8833333333333333
+      }
+    }
+  ]
+}

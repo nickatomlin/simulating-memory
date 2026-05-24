@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-05-03T19:41:25.647956+00:00",
+    "seed": 42,
+    "strict_llm_coverage": false,
+    "levels": [
+      "biography",
+      "distractor",
+      "reading_level",
+      "redundant"
+    ],
+    "prompt_conditions": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "eval_conditions": [
+      "C1",
+      "C2",
+      "C3",
+      "compactor"
+    ],
+    "human_dir": "application/approved_runs",
+    "llm_out_root": "application/out",
+    "task_name": "application_reading_qa",
+    "compactor": {
+      "skipped": false,
+      "root": "application/compactor",
+      "rows_merged_by_model": {
+        "anthropic_claude-opus-4.6": 100,
+        "openai_gpt-5.4": 100,
+        "meta-llama_llama-3-8b-instruct": 100,
+        "meta-llama_llama-3.3-70b-instruct": 100,
+        "qwen_qwen3-30b-a3b-instruct-2507": 100,
+        "qwen_qwen3-30b-a3b-thinking-2507": 100,
+        "qwen_qwen3-8b_thinking_true": 100,
+        "qwen_qwen3-8b_thinking_false": 100,
+        "qwen_qwen3-next-80b-a3b-instruct": 100
+      }
+    }
+  },
+  "models": [
+    {
+      "model": "anthropic_claude-opus-4.6",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 26,
+        "C2": 16,
+        "C3": 16,
+        "compactor": 20
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.65,
+        "C2": 0.3902439024390244,
+        "C3": 0.5,
+        "compactor": 0.5
+      },
+      "accuracy_C1": 0.65,
+      "accuracy_C2": 0.3902439024390244,
+      "accuracy_C3": 0.5,
+      "accuracy_compactor": 0.5
+    },
+    {
+      "model": "meta-llama_llama-3-8b-instruct",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 23,
+        "C2": 20,
+        "C3": 12,
+        "compactor": 22
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.575,
+        "C2": 0.4878048780487805,
+        "C3": 0.375,
+        "compactor": 0.55
+      },
+      "accuracy_C1": 0.575,
+      "accuracy_C2": 0.4878048780487805,
+      "accuracy_C3": 0.375,
+      "accuracy_compactor": 0.55
+    },
+    {
+      "model": "meta-llama_llama-3.3-70b-instruct",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 23,
+        "C2": 23,
+        "C3": 15,
+        "compactor": 20
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.575,
+        "C2": 0.5609756097560976,
+        "C3": 0.46875,
+        "compactor": 0.5
+      },
+      "accuracy_C1": 0.575,
+      "accuracy_C2": 0.5609756097560976,
+      "accuracy_C3": 0.46875,
+      "accuracy_compactor": 0.5
+    },
+    {
+      "model": "openai_gpt-5.4",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 18,
+        "C2": 19,
+        "C3": 18,
+        "compactor": 22
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.45,
+        "C2": 0.4634146341463415,
+        "C3": 0.5625,
+        "compactor": 0.55
+      },
+      "accuracy_C1": 0.45,
+      "accuracy_C2": 0.4634146341463415,
+      "accuracy_C3": 0.5625,
+      "accuracy_compactor": 0.55
+    },
+    {
+      "model": "qwen_qwen3-30b-a3b-instruct-2507",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 23,
+        "C2": 19,
+        "C3": 15,
+        "compactor": 18
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.575,
+        "C2": 0.4634146341463415,
+        "C3": 0.46875,
+        "compactor": 0.45
+      },
+      "accuracy_C1": 0.575,
+      "accuracy_C2": 0.4634146341463415,
+      "accuracy_C3": 0.46875,
+      "accuracy_compactor": 0.45
+    },
+    {
+      "model": "qwen_qwen3-30b-a3b-thinking-2507",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 17,
+        "C2": 16,
+        "C3": 18,
+        "compactor": 19
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.425,
+        "C2": 0.3902439024390244,
+        "C3": 0.5625,
+        "compactor": 0.475
+      },
+      "accuracy_C1": 0.425,
+      "accuracy_C2": 0.3902439024390244,
+      "accuracy_C3": 0.5625,
+      "accuracy_compactor": 0.475
+    },
+    {
+      "model": "qwen_qwen3-8b_thinking_false",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 20,
+        "C2": 19,
+        "C3": 14,
+        "compactor": 20
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5,
+        "C2": 0.4634146341463415,
+        "C3": 0.4375,
+        "compactor": 0.5
+      },
+      "accuracy_C1": 0.5,
+      "accuracy_C2": 0.4634146341463415,
+      "accuracy_C3": 0.4375,
+      "accuracy_compactor": 0.5
+    },
+    {
+      "model": "qwen_qwen3-8b_thinking_true",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 16,
+        "C2": 23,
+        "C3": 22,
+        "compactor": 21
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.4,
+        "C2": 0.5609756097560976,
+        "C3": 0.6875,
+        "compactor": 0.525
+      },
+      "accuracy_C1": 0.4,
+      "accuracy_C2": 0.5609756097560976,
+      "accuracy_C3": 0.6875,
+      "accuracy_compactor": 0.525
+    },
+    {
+      "model": "qwen_qwen3-next-80b-a3b-instruct",
+      "n_docs": 10,
+      "n_level_pairs_per_doc": 6,
+      "n_trials_ordered": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 22,
+        "C2": 22,
+        "C3": 18,
+        "compactor": 20
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.55,
+        "C2": 0.5365853658536586,
+        "C3": 0.5625,
+        "compactor": 0.5
+      },
+      "accuracy_C1": 0.55,
+      "accuracy_C2": 0.5365853658536586,
+      "accuracy_C3": 0.5625,
+      "accuracy_compactor": 0.5
+    }
+  ]
+}

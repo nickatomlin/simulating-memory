@@ -1,0 +1,20 @@
+{
+  "task": "sum_variable_mapping",
+  "n_participants": 5,
+  "n_runs_per_participant": 3,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Summarizer baseline",
+      "n": 15,
+      "n_participants": 5,
+      "n_runs_per_participant": 3,
+      "metrics": {
+        "score_mean": 0.0,
+        "score_min": 0,
+        "score_max": 0,
+        "summary_length_words": 38.8
+      }
+    }
+  ]
+}

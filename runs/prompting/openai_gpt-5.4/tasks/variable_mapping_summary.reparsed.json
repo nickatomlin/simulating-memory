@@ -1,0 +1,56 @@
+{
+  "task": "variable_mapping",
+  "n_participants": 50,
+  "n_runs_per_participant": 3,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Just describe the task",
+      "n": 150,
+      "n_participants": 50,
+      "n_runs_per_participant": 3,
+      "metrics": {
+        "score_mean": 10.0,
+        "score_min": 10,
+        "score_max": 10
+      }
+    },
+    {
+      "condition": "C2",
+      "condition_name": "Task + simulate human",
+      "n": 150,
+      "n_participants": 50,
+      "n_runs_per_participant": 3,
+      "metrics": {
+        "score_mean": 10.0,
+        "score_min": 10,
+        "score_max": 10
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Task + human + limited memory",
+      "n": 150,
+      "n_participants": 50,
+      "n_runs_per_participant": 3,
+      "metrics": {
+        "score_mean": 10.0,
+        "score_min": 10,
+        "score_max": 10
+      }
+    },
+    {
+      "condition": "C4",
+      "condition_name": "Task + human + limited memory + examples",
+      "n": 150,
+      "n_participants": 50,
+      "n_runs_per_participant": 3,
+      "metrics": {
+        "score_mean": 10.0,
+        "score_min": 10,
+        "score_max": 10
+      }
+    }
+  ],
+  "reparse_variable_mapping_v1": true
+}

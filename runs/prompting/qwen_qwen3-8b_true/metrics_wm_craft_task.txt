@@ -1,0 +1,3 @@
+task | n  | accuracy_mean | condition | correct_total | slot_utilization | total_questions
+-----+----+---------------+-----------+---------------+------------------+----------------
+     | 15 | 0.8800        | C2        | 66            | 0.9167           | 75             

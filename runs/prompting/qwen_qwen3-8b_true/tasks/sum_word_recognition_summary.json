@@ -1,0 +1,17 @@
+{
+  "task": "sum_word_recognition",
+  "n_participants": 5,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Summarizer baseline",
+      "n": 5,
+      "metrics": {
+        "score_mean": 87.0,
+        "score_min": 35,
+        "score_max": 100,
+        "summary_length_words": 54.4
+      }
+    }
+  ]
+}

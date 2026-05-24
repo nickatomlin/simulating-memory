@@ -1,0 +1,166 @@
+{
+  "task": "nback",
+  "meta": {
+    "matched_html": true,
+    "html_constants": {
+      "TRIALS_PER_BLOCK": 14,
+      "TARGET_RATIO": 0.3333333333333333,
+      "STIMULUS_MS": 500,
+      "ISI_MS": 2000,
+      "BLOCK_INTRO_MS": 2500,
+      "N_LEVELS": [
+        1,
+        2,
+        3
+      ],
+      "CONSONANTS": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    "temperature": 0.0,
+    "n_repeat": 50,
+    "n_repeats_per_participant": 1,
+    "seed": 123,
+    "conditions": {
+      "C1": "Just describe the task",
+      "C2": "Task + simulate human psychology experiment",
+      "C3": "Task + human simulation + limited memory emphasis",
+      "C4": "Task + human simulation + limited memory + in-context examples"
+    },
+    "total_records": 600
+  },
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Just describe the task",
+      "n": 150,
+      "metrics": {
+        "d_prime_mean": 0.026078687168294482,
+        "acc_over_14": 0.9995238095238095,
+        "acc_over_answered": 0.9995238095238095,
+        "answered_rate": 1.0
+      },
+      "breakdown": {
+        "d_prime_by_n": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.07823606150488344
+        },
+        "acc_over_14_by_n": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 0.9985714285714287
+        },
+        "answered_rate_by_n": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        }
+      }
+    },
+    {
+      "condition": "C2",
+      "condition_name": "Task + simulate human psychology experiment",
+      "n": 150,
+      "metrics": {
+        "d_prime_mean": 0.0,
+        "acc_over_14": 1.0,
+        "acc_over_answered": 1.0,
+        "answered_rate": 1.0
+      },
+      "breakdown": {
+        "d_prime_by_n": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "acc_over_14_by_n": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        },
+        "answered_rate_by_n": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        }
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Task + human simulation + limited memory emphasis",
+      "n": 150,
+      "metrics": {
+        "d_prime_mean": 0.0,
+        "acc_over_14": 1.0,
+        "acc_over_answered": 1.0,
+        "answered_rate": 1.0
+      },
+      "breakdown": {
+        "d_prime_by_n": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "acc_over_14_by_n": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        },
+        "answered_rate_by_n": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        }
+      }
+    },
+    {
+      "condition": "C4",
+      "condition_name": "Task + human simulation + limited memory + in-context examples",
+      "n": 150,
+      "metrics": {
+        "d_prime_mean": 0.026078687168294482,
+        "acc_over_14": 0.9995238095238095,
+        "acc_over_answered": 0.9995238095238095,
+        "answered_rate": 1.0
+      },
+      "breakdown": {
+        "d_prime_by_n": {
+          "1": 0.0,
+          "2": 0.07823606150488344,
+          "3": 0.0
+        },
+        "acc_over_14_by_n": {
+          "1": 1.0,
+          "2": 0.9985714285714287,
+          "3": 1.0
+        },
+        "answered_rate_by_n": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        }
+      }
+    }
+  ]
+}

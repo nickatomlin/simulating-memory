@@ -1,0 +1,46 @@
+{
+  "task": "word_recognition",
+  "n_participants": 50,
+  "conditions": [
+    {
+      "condition": "C1",
+      "condition_name": "Just describe the task",
+      "n": 50,
+      "metrics": {
+        "score_mean": 99.94,
+        "score_min": 99,
+        "score_max": 100
+      }
+    },
+    {
+      "condition": "C2",
+      "condition_name": "Task + simulate human psychology experiment",
+      "n": 50,
+      "metrics": {
+        "score_mean": 99.92,
+        "score_min": 98,
+        "score_max": 100
+      }
+    },
+    {
+      "condition": "C3",
+      "condition_name": "Task + human simulation + limited memory emphasis",
+      "n": 50,
+      "metrics": {
+        "score_mean": 99.88,
+        "score_min": 98,
+        "score_max": 100
+      }
+    },
+    {
+      "condition": "C4",
+      "condition_name": "Task + human simulation + limited memory + in-context examples",
+      "n": 50,
+      "metrics": {
+        "score_mean": 97.4,
+        "score_min": 33,
+        "score_max": 100
+      }
+    }
+  ]
+}

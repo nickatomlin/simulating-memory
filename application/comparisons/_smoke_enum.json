@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-05-03T20:41:52.633944+00:00",
+    "seed": 42,
+    "trial_design": "enumerate_single_doc_level_pairs",
+    "n_trials_requested": null,
+    "strict_llm_coverage": false,
+    "levels": [
+      "biography",
+      "distractor",
+      "reading_level",
+      "redundant"
+    ],
+    "prompt_conditions": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "eval_conditions": [
+      "C1",
+      "C2",
+      "C3",
+      "compactor"
+    ],
+    "human_dir": "application/approved_runs",
+    "llm_out_root": "application/out",
+    "task_name": "application_reading_qa",
+    "compactor": {
+      "skipped": false,
+      "root": "application/compactor",
+      "rows_merged_by_model": {
+        "anthropic_claude-opus-4.6": 100,
+        "openai_gpt-5.4": 100,
+        "meta-llama_llama-3-8b-instruct": 100,
+        "meta-llama_llama-3.3-70b-instruct": 100,
+        "qwen_qwen3-30b-a3b-instruct-2507": 100,
+        "qwen_qwen3-30b-a3b-thinking-2507": 100,
+        "qwen_qwen3-8b_thinking_true": 100,
+        "qwen_qwen3-8b_thinking_false": 100,
+        "qwen_qwen3-next-80b-a3b-instruct": 100
+      }
+    }
+  },
+  "models": [
+    {
+      "model": "openai_gpt-5.4",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 60,
+      "n_trials_human_defined": 49,
+      "hits": {
+        "C1": 24,
+        "C2": 25,
+        "C3": 18,
+        "compactor": 22
+      },
+      "denom": {
+        "C1": 40,
+        "C2": 41,
+        "C3": 32,
+        "compactor": 40
+      },
+      "accuracy_by_condition": {
+        "C1": 0.6,
+        "C2": 0.6097560975609756,
+        "C3": 0.5625,
+        "compactor": 0.55
+      },
+      "accuracy_C1": 0.6,
+      "accuracy_C2": 0.6097560975609756,
+      "accuracy_C3": 0.5625,
+      "accuracy_compactor": 0.55
+    }
+  ]
+}

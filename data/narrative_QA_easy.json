@@ -1,0 +1,1325 @@
+{
+  "meta": {
+    "model": "gpt-4.1-mini",
+    "n_stories": 10,
+    "target_words": 600,
+    "min_words": 520,
+    "max_words": 720,
+    "questions_per_story": 10,
+    "note": "Two-step generation: story first, then questions. No explicit events list.",
+    "paragraphized_by_llm": true,
+    "paragraph_model": "gpt-4.1-mini"
+  },
+  "items": [
+    {
+      "story_id": "S01",
+      "title": "The Unexpected Journey of Clara and the Lost Map",
+      "story_text": "Clara had always been fascinated by old maps, so when she stumbled upon a dusty, leather-bound atlas in her grandmother’s attic, she felt an immediate connection. The map inside was unlike any she had seen before, depicting a mysterious island with cryptic symbols and a marked path leading to a spot labeled 'The Heart of the Forest.' Intrigued, Clara decided to follow the map and uncover its secrets.\n\nThe next morning, she packed a small backpack with essentials: water, snacks, a compass, and a notebook to record her findings. She set off early, determined to reach the island indicated on the map, which was said to be accessible by a ferry from the nearby harbor.\n\nUpon arriving at the harbor, Clara learned that the ferry only ran twice a day, and she had missed the morning departure by minutes. Rather than wait idly, she explored the bustling docks and met an elderly fisherman named Thomas, who shared stories of the island and warned her about its dense forests and tricky terrain. Encouraged by his tales, Clara bought a ticket for the afternoon ferry and spent the time reviewing the map, noting the landmarks she would need to identify along the way.\n\nWhen the ferry finally departed, Clara felt a mix of excitement and nervousness as the shoreline faded behind her. The journey across the choppy waters lasted about an hour, during which she watched seagulls dive and the sun cast golden hues over the waves.\n\nUpon arriving at the island, Clara stepped onto the rocky shore and immediately noticed the thick canopy of trees stretching inland. She unfolded the map and began following the marked path, carefully matching the symbols to the natural features around her. The forest was alive with the sounds of chirping birds and rustling leaves, and Clara found herself marveling at the vibrant greenery and the occasional glimpse of colorful flowers.\n\nAfter walking for nearly two hours, she reached a clearing where an ancient stone archway stood, covered in moss and vines. This was the first major landmark on the map, and Clara felt a surge of accomplishment. She took photographs and sketched the archway in her notebook before continuing along the path.\n\nAs she ventured deeper into the forest, the terrain became more challenging, with tangled roots and slippery rocks. At one point, Clara slipped and twisted her ankle, forcing her to sit down and assess the injury. Despite the pain, she was determined to press on. Using her compass and the map, she carefully navigated toward the next symbol, a small waterfall hidden behind a curtain of ivy.\n\nWhen she finally heard the sound of rushing water, Clara’s spirits lifted. She found the waterfall cascading into a crystal-clear pool, its mist cooling her face. She rested there, refilling her water bottle and jotting down notes about the flora and fauna she observed.\n\nAfter the break, Clara resumed her journey, now moving more cautiously. The map indicated that the final destination, 'The Heart of the Forest,' was nearby. Following a narrow trail lined with ancient oak trees, she soon arrived at a large clearing dominated by a towering tree with sprawling branches and a trunk wide enough to shelter several people.\n\nIn the center of the tree’s base was a hollow containing a small wooden box. Clara opened the box to find a collection of old coins, a faded photograph, and a letter. The letter explained that the box was a time capsule left by explorers who had visited the island decades earlier, meant to be discovered by someone curious and brave enough to follow the map.\n\nClara felt a deep connection to these past adventurers and decided to add her own note and a small trinket before replacing the box. As the sun began to set, she retraced her steps back to the shore, her ankle throbbing but her heart full.\n\nBoarding the ferry for the return trip, Clara reflected on the day’s events and the unexpected journey that had unfolded from a simple discovery in her grandmother’s attic. She knew she would cherish this adventure forever and looked forward to sharing her story with others.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Clara do immediately after finding the old atlas in her grandmother's attic?",
+          "options": {
+            "A": "She packed a backpack with essentials.",
+            "B": "She decided to follow the map and uncover its secrets.",
+            "C": "She met an elderly fisherman named Thomas.",
+            "D": "She boarded the ferry to the island."
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "Which item did Clara NOT pack in her backpack before setting off?",
+          "options": {
+            "A": "Compass",
+            "B": "Notebook",
+            "C": "Snacks",
+            "D": "Camera"
+          },
+          "difficulty": "medium",
+          "answer": "D"
+        },
+        {
+          "q_id": "Q03",
+          "question": "What happened first at the harbor?",
+          "options": {
+            "A": "Clara bought a ticket for the afternoon ferry.",
+            "B": "Clara missed the morning ferry departure.",
+            "C": "Clara met the fisherman Thomas.",
+            "D": "Clara reviewed the map."
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "question": "Which event occurred directly after Clara met Thomas?",
+          "options": {
+            "A": "She boarded the afternoon ferry.",
+            "B": "She explored the docks.",
+            "C": "She reviewed the map and noted landmarks.",
+            "D": "She packed her backpack."
+          },
+          "difficulty": "hard",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q05",
+          "question": "How long did the ferry journey to the island take?",
+          "options": {
+            "A": "About 30 minutes",
+            "B": "About an hour",
+            "C": "Two hours",
+            "D": "Half a day"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What was the first major landmark Clara encountered on the island?",
+          "options": {
+            "A": "A small waterfall",
+            "B": "The Heart of the Forest",
+            "C": "An ancient stone archway",
+            "D": "A towering oak tree"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q07",
+          "question": "What injury did Clara suffer while exploring the forest?",
+          "options": {
+            "A": "A twisted ankle",
+            "B": "A cut on her hand",
+            "C": "A sprained wrist",
+            "D": "A bruised knee"
+          },
+          "difficulty": "easy",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q08",
+          "question": "What did Clara find inside the wooden box at 'The Heart of the Forest'?",
+          "options": {
+            "A": "A compass and a map",
+            "B": "Old coins, a photograph, and a letter",
+            "C": "A diary and a trinket",
+            "D": "A small statue and a note"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q09",
+          "question": "What did Clara do after reading the letter inside the box?",
+          "options": {
+            "A": "She left the box untouched.",
+            "B": "She took the box with her.",
+            "C": "She added her own note and a trinket before replacing it.",
+            "D": "She buried the box deeper in the forest."
+          },
+          "difficulty": "hard",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q10",
+          "question": "What did Clara do last before leaving the island?",
+          "options": {
+            "A": "She took photographs of the waterfall.",
+            "B": "She rested at the ancient stone archway.",
+            "C": "She retraced her steps back to the shore.",
+            "D": "She met the fisherman Thomas again."
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        }
+      ],
+      "stats": {
+        "word_count": 692,
+        "paragraph_count": 12
+      }
+    },
+    {
+      "story_id": "S02",
+      "title": "The Unexpected Journey",
+      "story_text": "On a crisp autumn morning, Emma awoke to the sound of her phone buzzing insistently on the bedside table. She rubbed her eyes and reached for it, noticing an unfamiliar number flashing on the screen. Curiosity piqued, she answered, and a voice on the other end informed her that she had won a weekend getaway contest she didn’t remember entering. Surprised yet intrigued, Emma quickly agreed to the offer, and within an hour, a sleek black car was waiting outside her apartment to whisk her away. As the city skyline faded behind her, Emma felt a mix of excitement and nervous anticipation.\n\nThe driver, a friendly man named Carlos, handed her a small envelope containing a map and a list of clues for a treasure hunt planned for the weekend. Emma’s heart raced as she realized this was no ordinary getaway. The first clue led her to a quaint café nestled in a quiet neighborhood, where she ordered a cup of chamomile tea and found a tiny key taped under the saucer. Holding the key, she noticed a note directing her to the old library downtown.\n\nAt the library, Emma navigated the towering shelves until she discovered a locked drawer in the reference section. Using the key, she opened it to find a dusty journal filled with handwritten stories and sketches. Flipping through the pages, she uncovered the second clue hidden between the entries: a riddle hinting at a nearby park. Determined, Emma stepped outside into the cool air and made her way to the park, where the golden leaves crunched beneath her feet.\n\nNear a large oak tree, Emma spotted a small wooden box buried beneath a pile of leaves. Inside, she found an old compass and a note instructing her to follow the compass’s direction to the next destination. Trusting the guidance, she walked for nearly an hour until she reached a quiet lake shimmering under the afternoon sun. There, she noticed a rowboat tied to the dock, waiting for her.\n\nEmma climbed into the boat and pushed off from the shore, the gentle ripples soothing her nerves. Midway across the lake, she spotted a buoy with a waterproof container attached. Reaching inside, she pulled out a photograph of a lighthouse and a message written on the back: “Find the beacon that guides sailors home.” Intrigued, Emma rowed back to shore and set off toward the lighthouse perched on a rocky cliff.\n\nAs she approached the lighthouse, the sun began to set, casting a warm glow over the landscape. Emma climbed the spiral staircase to the top, where she found a lantern and the next clue tied to its handle. The message directed her to a nearby inn, where she was to spend the night. Upon entering the cozy establishment, she was greeted by the innkeeper, who handed her a key to room seven and wished her a restful evening.\n\nIn her room, Emma discovered a letter explaining that the treasure hunt was designed to help her rediscover her love for adventure and the simple joys of life. The final task was to write a story about her day and leave it on the desk. Inspired, Emma began typing, recounting every moment with vivid detail. As she finished, she felt a profound sense of accomplishment and peace.\n\nThe next morning, Emma checked out of the inn and found a small package waiting for her at the front desk. Inside was a beautifully bound book containing all the stories from the treasure hunt participants, including her own. Along with the book was a note inviting her to join a community of explorers who shared her passion for discovery.\n\nEmma smiled, realizing that what began as a mysterious phone call had transformed into an unforgettable journey of self-discovery and new friendships. She stepped outside into the bright morning light, ready to embrace whatever adventures awaited her next.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Emma do immediately after answering the phone call?",
+          "options": {
+            "A": "She went to the old library.",
+            "B": "She agreed to the weekend getaway offer.",
+            "C": "She ordered chamomile tea at a café.",
+            "D": "She opened a small envelope from the driver."
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "Which item did Emma find first during the treasure hunt?",
+          "options": {
+            "A": "A dusty journal",
+            "B": "A small wooden box",
+            "C": "A tiny key",
+            "D": "A compass"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q03",
+          "question": "What was the purpose of the compass Emma found in the wooden box?",
+          "options": {
+            "A": "To unlock the library drawer",
+            "B": "To guide her to the next destination",
+            "C": "To find the café",
+            "D": "To open the inn room"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "question": "What did Emma discover inside the locked drawer at the library?",
+          "options": {
+            "A": "A photograph of a lighthouse",
+            "B": "A letter explaining the treasure hunt",
+            "C": "A dusty journal with stories and sketches",
+            "D": "A small wooden box"
+          },
+          "difficulty": "easy",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q05",
+          "question": "Which location did Emma visit immediately after the café?",
+          "options": {
+            "A": "The old library downtown",
+            "B": "The nearby park",
+            "C": "The lake",
+            "D": "The lighthouse"
+          },
+          "difficulty": "medium",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What was the last activity Emma did before going to sleep at the inn?",
+          "options": {
+            "A": "Writing a story about her day",
+            "B": "Climbing the lighthouse staircase",
+            "C": "Rowing across the lake",
+            "D": "Following the compass direction"
+          },
+          "difficulty": "hard",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q07",
+          "question": "What did Emma find attached to the buoy in the lake?",
+          "options": {
+            "A": "A small wooden box",
+            "B": "A photograph of a lighthouse",
+            "C": "A letter from the innkeeper",
+            "D": "A compass"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q08",
+          "question": "What happened first during Emma’s treasure hunt?",
+          "options": {
+            "A": "She found a note directing her to the old library.",
+            "B": "She climbed the lighthouse.",
+            "C": "She received a package at the inn.",
+            "D": "She rowed a boat across the lake."
+          },
+          "difficulty": "medium",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q09",
+          "question": "After leaving the inn the next morning, what did Emma find waiting for her?",
+          "options": {
+            "A": "A map and list of clues",
+            "B": "A small package with a book",
+            "C": "A letter from Carlos",
+            "D": "A key to another room"
+          },
+          "difficulty": "hard",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q10",
+          "question": "What was the main message of the letter Emma found in her inn room?",
+          "options": {
+            "A": "Instructions for the next day’s adventure",
+            "B": "An invitation to a treasure hunt community",
+            "C": "The treasure hunt was to rediscover her love for adventure",
+            "D": "A warning about the challenges ahead"
+          },
+          "difficulty": "hard",
+          "answer": "C"
+        }
+      ],
+      "stats": {
+        "word_count": 647,
+        "paragraph_count": 9
+      }
+    },
+    {
+      "story_id": "S03",
+      "title": "The Unexpected Journey",
+      "story_text": "On a crisp autumn morning, Emma woke up to the sound of leaves rustling outside her window. She stretched and glanced at the calendar; today marked the beginning of her week-long hiking trip in the Blue Ridge Mountains. After months of planning, she was finally ready to embark on this adventure. She packed her backpack carefully, making sure to include essentials like water, snacks, a map, and a first-aid kit. By 8 a.m., she was out the door, locking her apartment behind her.\n\nEmma drove for two hours, the scenery changing from urban sprawl to rolling hills covered in vibrant fall foliage. Upon arriving at the trailhead, she parked her car and double-checked her gear. Her heart raced with excitement as she stepped onto the dirt path, the scent of pine and earth filling the air. The sun peeked through the trees, casting golden light on the forest floor.\n\nAs she hiked deeper into the woods, Emma noticed a small, weathered sign pointing toward a hidden waterfall. Curious and eager for a detour, she followed the narrow path. After about twenty minutes, the sound of rushing water grew louder until she reached a stunning cascade tumbling over moss-covered rocks. She sat on a nearby boulder, took a sip of water, and snapped a few photos to remember the moment.\n\nContinuing her journey, Emma spotted a family of deer grazing in a clearing. She froze, watching them quietly so as not to startle the animals. After a few minutes, the deer bounded away, disappearing into the thicket. Feeling peaceful, she resumed hiking, the trail winding uphill now. The ascent was challenging, but the crisp air invigorated her muscles.\n\nAround midday, Emma reached a ridge that offered a panoramic view of the valley below. She unpacked her lunch—a sandwich, an apple, and some trail mix—and ate while admiring the vast landscape. The sun was high, warming her face, and a gentle breeze rustled the leaves. She felt a profound connection to nature and a sense of accomplishment.\n\nAfter lunch, Emma consulted her map and decided to take a less-traveled route to her campsite. The path was rougher and overgrown, but she enjoyed the solitude. Suddenly, she stumbled over a hidden tree root and twisted her ankle. Pain shot through her foot, and she sat down to assess the injury. Despite the discomfort, she wrapped her ankle with an elastic bandage from her first-aid kit and rested for a few minutes.\n\nDetermined not to give up, Emma continued slowly, supporting herself with a sturdy branch. As the afternoon wore on, she finally spotted the clearing where her tent awaited. She set up camp carefully, making sure her tent was secure and her supplies were organized. The sun began to set, painting the sky with hues of pink and orange.\n\nThat evening, Emma built a small campfire, the flames crackling and casting dancing shadows around her. She cooked a simple meal of dehydrated soup and enjoyed the warmth. As darkness fell, she lay in her sleeping bag, listening to the sounds of the forest—the hoot of an owl and the rustle of nocturnal creatures. Despite the day's challenges, she felt content and proud.\n\nThe next morning, Emma woke early to the soft light filtering through the tent. She packed up her campsite and began the descent back toward her car. The journey home was filled with reflection on the unexpected twists of her trip—the hidden waterfall, the deer, and the sprained ankle. She knew she had grown stronger and more resilient. As she drove away from the mountains, Emma promised herself she would return soon, ready for whatever adventure awaited next.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Emma do immediately after waking up?",
+          "options": {
+            "A": "Packed her backpack",
+            "B": "Looked at the calendar",
+            "C": "Drove to the trailhead",
+            "D": "Built a campfire"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "Which event happened first during Emma's hike?",
+          "options": {
+            "A": "She saw a family of deer",
+            "B": "She reached the ridge for lunch",
+            "C": "She found the hidden waterfall",
+            "D": "She twisted her ankle"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q03",
+          "question": "What did Emma do after spotting the family of deer?",
+          "options": {
+            "A": "She took photos of the deer",
+            "B": "She resumed hiking uphill",
+            "C": "She rested and ate lunch",
+            "D": "She set up her tent"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "question": "What was the last activity Emma did before going to sleep on her first night?",
+          "options": {
+            "A": "Built a campfire",
+            "B": "Cooked dehydrated soup",
+            "C": "Listened to forest sounds",
+            "D": "Set up her tent"
+          },
+          "difficulty": "hard",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q05",
+          "question": "What did Emma include in her backpack before leaving her apartment?",
+          "options": {
+            "A": "Water, snacks, map, first-aid kit",
+            "B": "Camera, extra clothes, compass, food",
+            "C": "Tent, sleeping bag, cooking stove, water",
+            "D": "Hiking boots, raincoat, flashlight, snacks"
+          },
+          "difficulty": "easy",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q06",
+          "question": "Which event happened directly after Emma twisted her ankle?",
+          "options": {
+            "A": "She rested and wrapped her ankle",
+            "B": "She called for help",
+            "C": "She set up her tent",
+            "D": "She ate her lunch"
+          },
+          "difficulty": "medium",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q07",
+          "question": "What did Emma do after reaching the ridge at midday?",
+          "options": {
+            "A": "Took a less-traveled route",
+            "B": "Unpacked and ate lunch",
+            "C": "Set up her campsite",
+            "D": "Photographed the landscape"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q08",
+          "question": "What was the sequence of Emma's activities after arriving at the trailhead?",
+          "options": {
+            "A": "Parked car, checked gear, started hiking",
+            "B": "Started hiking, checked gear, parked car",
+            "C": "Checked gear, parked car, started hiking",
+            "D": "Started hiking, parked car, checked gear"
+          },
+          "difficulty": "hard",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q09",
+          "question": "What did Emma do before she finally set up her tent?",
+          "options": {
+            "A": "Built a campfire",
+            "B": "Rested after twisting her ankle",
+            "C": "Took photos of the waterfall",
+            "D": "Unpacked her lunch"
+          },
+          "difficulty": "hard",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q10",
+          "question": "What did Emma do first on the morning after camping?",
+          "options": {
+            "A": "Packed up her campsite",
+            "B": "Drove away from the mountains",
+            "C": "Started descending toward her car",
+            "D": "Reflected on her trip"
+          },
+          "difficulty": "easy",
+          "answer": "A"
+        }
+      ],
+      "stats": {
+        "word_count": 607,
+        "paragraph_count": 9
+      }
+    },
+    {
+      "story_id": "S04",
+      "title": "The Lost Journal of Maplewood",
+      "story_text": "On a crisp autumn morning, Emma decided to explore the attic of her grandmother’s old house in Maplewood. The house had been in the family for generations, but Emma had never ventured into the dusty attic before. She climbed the narrow wooden stairs, each step creaking beneath her weight, and pushed open the heavy hatch. Sunlight filtered through a small window, illuminating stacks of forgotten belongings and boxes covered in cobwebs.\n\nHer eyes caught a glimpse of a worn leather-bound journal lying atop a pile of yellowed newspapers. Curious, Emma carefully picked it up and brushed off the dust. The journal’s cover was faded, and its pages smelled of aged paper and memories. She opened it to find neat handwriting dated back to 1923. The journal belonged to her great-grandfather, Thomas, who had lived in Maplewood during the early 20th century.\n\nEmma settled herself on an old trunk and began reading the first entry, which described Thomas’s daily life as a carpenter and his dreams of building a community center. As she read further, Emma discovered entries detailing a mysterious event: a fire that had threatened to destroy the town’s beloved library. The journal described how Thomas and other townspeople had worked tirelessly to save the building, forming a human chain to pass buckets of water.\n\nInspired by this story of courage and unity, Emma decided to visit the local library to learn more. She dressed quickly and stepped outside, feeling the cool breeze ruffle her hair. At the library, she approached the librarian, Mrs. Greene, and showed her the journal. Mrs. Greene’s eyes widened in recognition, and she invited Emma to sit while she retrieved old town records and photographs.\n\nTogether, they examined black-and-white images of the library engulfed in smoke, with townsfolk gathered outside. Emma noticed a young man in one photo, handing a bucket to another, who looked remarkably like her great-grandfather. Mrs. Greene explained that the library had been rebuilt thanks to the community’s efforts, and the event was commemorated every year with a festival.\n\nEmma felt a surge of pride and connection to her heritage. Determined to honor her great-grandfather’s legacy, she volunteered to help organize the upcoming festival. Over the next few weeks, Emma coordinated with local businesses and schools, arranged decorations, and planned activities that celebrated the town’s history.\n\nOn the day of the festival, the streets of Maplewood buzzed with excitement. Children played games inspired by Thomas’s carpentry work, and storytellers shared tales from the journal. Emma stood near the library entrance, watching families enjoy the festivities.\n\nAs the sun set, she noticed an elderly man approaching her. He introduced himself as Mr. Harrison, a lifelong resident who had been a child during the fire. He thanked Emma for reviving the story and said it brought back cherished memories. Emma smiled, feeling a deep sense of fulfillment.\n\nThat evening, she returned to the attic with the journal, placing it carefully back where she found it. She realized that by uncovering her great-grandfather’s past, she had woven herself into the fabric of Maplewood’s story, ensuring that the spirit of community and resilience would continue for generations to come.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Emma do first when she arrived at her grandmother’s attic?",
+          "options": {
+            "A": "Picked up a leather-bound journal",
+            "B": "Climbed the narrow wooden stairs",
+            "C": "Pushed open the heavy hatch",
+            "D": "Brushed off the dust from a box"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "What was the date on the first journal entry Emma read?",
+          "options": {
+            "A": "1923",
+            "B": "1930",
+            "C": "1910",
+            "D": "1945"
+          },
+          "difficulty": "medium",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q03",
+          "question": "What event did Emma discover in the journal that involved the townspeople?",
+          "options": {
+            "A": "A flood that damaged the town hall",
+            "B": "A fire threatening the town’s library",
+            "C": "A storm that destroyed the community center",
+            "D": "A festival celebrating the town’s founding"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "question": "What did Emma do immediately after reading about the fire in the journal?",
+          "options": {
+            "A": "She called her grandmother",
+            "B": "She visited the local library",
+            "C": "She organized a community meeting",
+            "D": "She wrote a letter to the mayor"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q05",
+          "question": "Who helped Emma by showing old town records and photographs?",
+          "options": {
+            "A": "Mr. Harrison",
+            "B": "Her grandmother",
+            "C": "Mrs. Greene",
+            "D": "A local historian"
+          },
+          "difficulty": "easy",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What did Emma notice about a young man in one of the photographs at the library?",
+          "options": {
+            "A": "He was the mayor of Maplewood",
+            "B": "He looked like her great-grandfather",
+            "C": "He was holding a fire hose",
+            "D": "He was standing alone"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q07",
+          "question": "What was Emma’s role in the festival commemorating the library fire?",
+          "options": {
+            "A": "She was a storyteller",
+            "B": "She volunteered to help organize it",
+            "C": "She performed a play about the fire",
+            "D": "She was a vendor selling crafts"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q08",
+          "question": "What happened first on the day of the festival?",
+          "options": {
+            "A": "Emma met Mr. Harrison",
+            "B": "Children played games inspired by carpentry",
+            "C": "Storytellers shared tales from the journal",
+            "D": "Emma watched families enjoy festivities"
+          },
+          "difficulty": "hard",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q09",
+          "question": "When did Emma return the journal to the attic?",
+          "options": {
+            "A": "Before visiting the library",
+            "B": "After reading the first entry",
+            "C": "On the day of the festival",
+            "D": "That evening after the festival"
+          },
+          "difficulty": "hard",
+          "answer": "D"
+        },
+        {
+          "q_id": "Q10",
+          "question": "Who thanked Emma for reviving the story of the fire?",
+          "options": {
+            "A": "Mrs. Greene",
+            "B": "Her great-grandfather’s descendant",
+            "C": "Mr. Harrison",
+            "D": "The mayor of Maplewood"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        }
+      ],
+      "stats": {
+        "word_count": 525,
+        "paragraph_count": 9
+      }
+    },
+    {
+      "story_id": "S05",
+      "title": "The Unexpected Journey of Clara and the Lost Map",
+      "story_text": "Clara had always been fascinated by old maps and forgotten places. One rainy Saturday afternoon, while rummaging through her grandmother’s attic, she stumbled upon a dusty, rolled-up parchment tied with a faded red ribbon. Carefully untying it, Clara discovered it was a map of their small town, but with strange markings and a big red X near the outskirts. Intrigued, she decided to follow the map the next day.\n\nEarly Sunday morning, Clara packed a small backpack with water, snacks, a flashlight, and her trusty compass. She set out just as the sun began to rise, feeling a mix of excitement and curiosity. The first event was crossing the old wooden bridge that creaked under her weight, leading her into the dense forest shown on the map. As she walked deeper into the woods, the sunlight filtered through the leaves, casting dancing shadows on the ground.\n\nThe second event occurred when Clara noticed a peculiar stone statue partially hidden by vines. It resembled a mythical creature, and she took a photo to remember it. Continuing along the path, she reached a fork where the map indicated she should turn left, but the trail was overgrown and difficult to see.\n\nThe third event was her decision to clear some branches with a small pocket knife she carried, making the path passable. After about an hour, she arrived at a small clearing where an old, abandoned cabin stood. This was the fourth event, and Clara’s heart raced as she approached the creaky door. She pushed it open slowly, revealing dusty furniture and cobwebs inside. On a table lay a leather-bound journal, which she picked up carefully.\n\nThe fifth event was reading the journal, which belonged to a man named Elias who had lived there decades ago. His entries spoke of a hidden treasure buried nearby, guarded by riddles and traps. Inspired, Clara decided to continue her quest. Leaving the cabin, she followed the map to a nearby stream, the sixth event, where she spotted a series of unusual stones arranged in a pattern. Remembering a riddle from the journal about “stepping stones that tell a tale,” she carefully stepped on the stones in the order indicated by the markings on the map.\n\nSuccessfully crossing the stream, Clara reached a large oak tree with a hollow trunk, the seventh event. Inside, she found a small metal box locked with a combination. Using clues from the journal, she figured out the code and opened the box to find an old key and a faded photograph of Elias and a young woman smiling beside the same oak tree.\n\nThe eighth event was feeling a deep connection to the story and realizing the treasure was more than gold—it was a piece of history and love. She continued following the map to a nearby hill, the ninth event, where the red X was marked. Digging carefully at the base of the hill, Clara uncovered a wooden chest. Inside, instead of jewels or coins, she found letters, photographs, and keepsakes belonging to Elias and his beloved, preserved through time.\n\nThe tenth and final event was Clara sitting under the hill’s shade, reading the letters and feeling grateful for this unexpected journey. She decided to share the story with her family and the local museum, ensuring Elias’s legacy would live on. As the sun set, Clara packed up her findings and headed home, her heart full of wonder and a new appreciation for the past. This adventure, sparked by a simple map, had turned into a meaningful exploration of history, love, and discovery.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Clara find first in her grandmother's attic?",
+          "options": {
+            "A": "A leather-bound journal",
+            "B": "A dusty, rolled-up parchment tied with a faded red ribbon",
+            "C": "A small metal box",
+            "D": "A faded photograph"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "What did Clara do immediately after crossing the old wooden bridge?",
+          "options": {
+            "A": "She found the metal box",
+            "B": "She took a photo of a stone statue",
+            "C": "She reached the abandoned cabin",
+            "D": "She stepped on unusual stones in a stream"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q03",
+          "question": "Which event happened before Clara entered the abandoned cabin?",
+          "options": {
+            "A": "She used a pocket knife to clear branches",
+            "B": "She read the leather-bound journal",
+            "C": "She found the metal box in the oak tree",
+            "D": "She crossed the stream using stepping stones"
+          },
+          "difficulty": "medium",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q04",
+          "question": "What did Clara discover inside the cabin?",
+          "options": {
+            "A": "A wooden chest filled with keepsakes",
+            "B": "A stone statue resembling a mythical creature",
+            "C": "A leather-bound journal belonging to Elias",
+            "D": "A small metal box with a combination lock"
+          },
+          "difficulty": "easy",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q05",
+          "question": "What was the significance of the stream in Clara's journey?",
+          "options": {
+            "A": "It was where she found the abandoned cabin",
+            "B": "It had unusual stones she stepped on according to the map and journal",
+            "C": "It marked the location of the red X on the map",
+            "D": "It was where she found the metal box"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What did Clara find inside the hollow trunk of the oak tree?",
+          "options": {
+            "A": "Letters and photographs",
+            "B": "A small metal box locked with a combination",
+            "C": "The wooden chest marked by the red X",
+            "D": "The leather-bound journal"
+          },
+          "difficulty": "hard",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q07",
+          "question": "Which event happened last during Clara's adventure?",
+          "options": {
+            "A": "She opened the metal box at the oak tree",
+            "B": "She uncovered the wooden chest at the hill",
+            "C": "She read the letters under the hill's shade",
+            "D": "She took a photo of the stone statue"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q08",
+          "question": "What did Clara do right after reading the journal inside the cabin?",
+          "options": {
+            "A": "She followed the map to the nearby stream",
+            "B": "She opened the metal box in the oak tree",
+            "C": "She cleared branches with a pocket knife",
+            "D": "She dug at the base of the hill"
+          },
+          "difficulty": "hard",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q09",
+          "question": "What was Clara's first action on Sunday morning?",
+          "options": {
+            "A": "Untying the faded red ribbon on the map",
+            "B": "Packing a backpack with supplies",
+            "C": "Crossing the old wooden bridge",
+            "D": "Reading the leather-bound journal"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q10",
+          "question": "How did Clara use the clues from the journal at the oak tree?",
+          "options": {
+            "A": "To find the hidden treasure under the hill",
+            "B": "To figure out the combination to open the metal box",
+            "C": "To decide which path to take at the fork",
+            "D": "To interpret the markings on the stepping stones"
+          },
+          "difficulty": "hard",
+          "answer": "B"
+        }
+      ],
+      "stats": {
+        "word_count": 594,
+        "paragraph_count": 8
+      }
+    },
+    {
+      "story_id": "S06",
+      "title": "The Unexpected Journey of a Lost Letter",
+      "story_text": "On a crisp autumn morning, Emma found an old, dusty envelope tucked behind a loose brick in her grandmother’s attic. The envelope was yellowed with age and sealed with a faded red wax stamp. Curious, she carefully broke the seal and unfolded the letter inside. It was dated fifty years ago and addressed to a man named Henry, but there was no return address or sender’s name. Emma’s heart raced with intrigue as she decided to uncover the story behind the mysterious letter.\n\nEmma took the letter downstairs and showed it to her grandmother, who squinted at the handwriting and then gasped softly. “That’s from your grandfather,” she whispered. “He wrote that letter before he left for the war, but it was never sent.” Emma’s curiosity deepened, and she resolved to find out why the letter had been hidden and what had happened to Henry.\n\nThe next day, Emma visited the local library to research Henry’s name. She discovered that Henry was a young soldier who had served in World War II and had returned to their small town after the war. Emma found an old newspaper clipping about Henry’s heroic actions during a battle, which earned him a medal. However, there was no mention of the letter or any personal correspondence.\n\nDetermined to learn more, Emma visited the town’s historical society. There, an elderly librarian named Mr. Collins remembered Henry well and told Emma that Henry had been engaged to a woman named Margaret before he went to war. “They were inseparable,” Mr. Collins said. “But something happened when Henry came back. Margaret disappeared, and no one ever saw her again.”\n\nEmma’s mind raced. Could the letter be connected to Margaret’s disappearance? She decided to visit the old house where Margaret had lived, hoping to find clues. The house was abandoned, with broken windows and overgrown ivy. Inside, Emma found a dusty diary on a rickety table. The diary belonged to Margaret and contained heartfelt entries about her love for Henry and her fears during the war.\n\nOne entry caught Emma’s eye. Margaret wrote about a secret meeting with Henry on the night he was supposed to receive the letter. She mentioned a disagreement that left her heartbroken. Emma realized that the letter might have contained important news that changed everything between them.\n\nEmma took the diary home and read it carefully. She learned that Margaret had left town after the disagreement, hoping to start anew. Emma felt a pang of sadness for the lost love story and wondered if Henry ever knew the truth. She decided to find out if Henry was still alive.\n\nAfter some searching, Emma discovered that Henry had passed away several years ago but had a daughter named Lily living in a nearby city. Emma contacted Lily and arranged a meeting. When they met, Emma handed her the letter and the diary. Lily’s eyes filled with tears as she read the words of her father and Margaret.\n\nLily thanked Emma for bringing closure to a story that had haunted her family for decades. She shared stories about Henry’s quiet strength and how he never spoke much about Margaret. Emma felt a deep connection to the past and was grateful for the unexpected journey the lost letter had taken her on.\n\nAs Emma left Lily’s house, she looked up at the golden leaves falling gently around her. The mysterious letter had not only revealed a forgotten love but had also reminded her of the importance of uncovering stories that time almost forgot. With a smile, Emma tucked the letter safely into her bag, ready to share this tale with future generations.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Emma find first in her grandmother’s attic?",
+          "options": {
+            "A": "A dusty diary",
+            "B": "An old envelope",
+            "C": "A newspaper clipping",
+            "D": "A faded photograph"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "What did Emma do immediately after finding the letter?",
+          "options": {
+            "A": "She visited the library",
+            "B": "She showed it to her grandmother",
+            "C": "She contacted Henry’s daughter",
+            "D": "She went to the historical society"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q03",
+          "question": "What information did Emma find at the local library about Henry?",
+          "options": {
+            "A": "He disappeared after the war",
+            "B": "He was a soldier awarded a medal",
+            "C": "He wrote many letters to Margaret",
+            "D": "He never returned from the war"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "question": "Who told Emma about Henry’s engagement to Margaret?",
+          "options": {
+            "A": "Her grandmother",
+            "B": "Mr. Collins at the historical society",
+            "C": "Lily, Henry’s daughter",
+            "D": "A librarian at the local library"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q05",
+          "question": "What did Emma find inside Margaret’s old house?",
+          "options": {
+            "A": "The unsent letter",
+            "B": "A box of photographs",
+            "C": "Margaret’s diary",
+            "D": "Henry’s war medals"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What significant event did Margaret write about in her diary?",
+          "options": {
+            "A": "Her secret meeting and disagreement with Henry",
+            "B": "Henry’s departure for the war",
+            "C": "Her plans to marry Henry",
+            "D": "Her decision to hide the letter"
+          },
+          "difficulty": "hard",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q07",
+          "question": "What did Emma decide to do after reading the diary?",
+          "options": {
+            "A": "Return the diary to the old house",
+            "B": "Look for Henry’s descendants",
+            "C": "Write a book about the story",
+            "D": "Visit the war memorial"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q08",
+          "question": "What was Lily’s reaction when Emma gave her the letter and diary?",
+          "options": {
+            "A": "She was confused",
+            "B": "She was angry",
+            "C": "She cried",
+            "D": "She laughed"
+          },
+          "difficulty": "easy",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q09",
+          "question": "Which event happened last in the story?",
+          "options": {
+            "A": "Emma found the letter in the attic",
+            "B": "Emma met Henry’s daughter Lily",
+            "C": "Emma read Margaret’s diary",
+            "D": "Emma visited the historical society"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q10",
+          "question": "What did the mysterious letter ultimately remind Emma of?",
+          "options": {
+            "A": "The importance of family heirlooms",
+            "B": "The value of hidden treasures",
+            "C": "The importance of uncovering forgotten stories",
+            "D": "The sadness of lost love"
+          },
+          "difficulty": "hard",
+          "answer": "C"
+        }
+      ],
+      "stats": {
+        "word_count": 606,
+        "paragraph_count": 10
+      }
+    },
+    {
+      "story_id": "S07",
+      "title": "The Unexpected Journey of the Lost Letter",
+      "story_text": "On a crisp autumn morning, Emma discovered an old, dusty box tucked away in the attic of her grandmother’s house. Curiosity piqued, she carefully opened it and found a bundle of yellowed letters tied with a faded red ribbon. The letters were addressed to a man named Thomas, dated back to the 1940s. Emma’s heart raced as she realized these were love letters from her grandmother to a mysterious soldier during World War II. Determined to uncover the story behind them, Emma decided to read through each letter meticulously.\n\nThe first letter revealed a tender farewell before Thomas was deployed overseas. Emma could almost hear her grandmother’s voice as she read the heartfelt promises and dreams they shared. As she progressed through the letters, she noticed a recurring mention of a place called Willow Creek, a small town her grandmother had fondly described. Intrigued, Emma resolved to visit Willow Creek to learn more about Thomas and the life her grandmother once envisioned.\n\nA week later, Emma packed her bags and set off on the journey. Upon arriving in Willow Creek, she was greeted by the town’s quaint charm—rustic houses, golden leaves falling gently, and the distant sound of a flowing river. Emma visited the local library, hoping to find records or any information about Thomas. The librarian, Mrs. Jenkins, was an elderly woman with kind eyes who eagerly assisted Emma in searching through archives.\n\nAfter hours of digging, Emma uncovered a faded photograph of Thomas in his army uniform, standing proudly with his comrades. Alongside the photo was a newspaper clipping reporting a heroic act Thomas had performed during the war, saving several fellow soldiers from an ambush. Emma felt a surge of pride and sadness, realizing the depth of the man her grandmother loved.\n\nDetermined to learn more, Emma asked Mrs. Jenkins if anyone in town might remember Thomas. The librarian directed her to Mr. Harper, the town’s oldest resident, who lived in a cozy cottage near the river. Emma found Mr. Harper tending to his garden and introduced herself. With a warm smile, he invited her in and began recounting stories of Thomas’s bravery and kindness. He mentioned that Thomas had planned to return to Willow Creek after the war but tragically never made it back.\n\nEmma’s eyes welled up with tears as she listened to the tales of love and loss. She realized that these letters were more than just words on paper; they were a bridge connecting her to her grandmother’s past. Before leaving, Mr. Harper handed Emma a small, worn box. Inside was a silver locket engraved with the initials T and E—a symbol of their eternal bond.\n\nAs the sun began to set, Emma walked along the riverbank, clutching the locket tightly. She felt a profound connection to her grandmother and Thomas, understanding the sacrifices and hopes that shaped their lives. Inspired, Emma decided to write a letter of her own, addressed to her grandmother, expressing gratitude for the love story that had transcended time.\n\nReturning home, Emma carefully placed the letters and locket back into the box, now filled with newfound meaning. She knew that she would cherish this discovery forever and share the story with future generations. The unexpected journey of the lost letter had not only unveiled a hidden past but also deepened Emma’s appreciation for the enduring power of love.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Emma find first when she opened the old box in the attic?",
+          "options": {
+            "A": "A silver locket",
+            "B": "A bundle of yellowed letters",
+            "C": "A faded photograph",
+            "D": "A newspaper clipping"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "What was the main subject of the letters Emma found?",
+          "options": {
+            "A": "War strategies",
+            "B": "Business plans",
+            "C": "Love letters from her grandmother to a soldier",
+            "D": "Travel diaries"
+          },
+          "difficulty": "easy",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q03",
+          "question": "What motivated Emma to visit Willow Creek?",
+          "options": {
+            "A": "To attend a festival",
+            "B": "To find Thomas and learn about her grandmother’s past",
+            "C": "To meet Mr. Harper",
+            "D": "To visit the river"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "question": "What did Emma discover at the local library in Willow Creek?",
+          "options": {
+            "A": "A diary written by her grandmother",
+            "B": "A map of Willow Creek",
+            "C": "A photograph of Thomas and a newspaper clipping about his heroism",
+            "D": "A letter from Mr. Harper"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q05",
+          "question": "Who did Emma meet after the librarian suggested someone might remember Thomas?",
+          "options": {
+            "A": "Mrs. Jenkins",
+            "B": "Mr. Harper",
+            "C": "A soldier’s descendant",
+            "D": "The mayor of Willow Creek"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What did Mr. Harper give Emma before she left his cottage?",
+          "options": {
+            "A": "A bundle of letters",
+            "B": "A silver locket engraved with initials",
+            "C": "A photograph of the town",
+            "D": "A book about World War II"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q07",
+          "question": "What did Emma do after returning home from Willow Creek?",
+          "options": {
+            "A": "She wrote a letter to Thomas",
+            "B": "She placed the letters and locket back into the box",
+            "C": "She visited her grandmother",
+            "D": "She called Mr. Harper"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q08",
+          "question": "Which event happened immediately after Emma read the first letter?",
+          "options": {
+            "A": "She visited the local library",
+            "B": "She noticed repeated mentions of Willow Creek",
+            "C": "She met Mr. Harper",
+            "D": "She found the silver locket"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q09",
+          "question": "What was the order of Emma’s visits after arriving in Willow Creek?",
+          "options": {
+            "A": "Library, then Mr. Harper’s cottage",
+            "B": "Mr. Harper’s cottage, then the library",
+            "C": "Riverbank, then library",
+            "D": "Town hall, then Mr. Harper’s cottage"
+          },
+          "difficulty": "hard",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q10",
+          "question": "What did Emma decide to do inspired by her discovery?",
+          "options": {
+            "A": "Write a letter to her grandmother",
+            "B": "Move to Willow Creek",
+            "C": "Donate the letters to a museum",
+            "D": "Search for other soldiers’ stories"
+          },
+          "difficulty": "medium",
+          "answer": "A"
+        }
+      ],
+      "stats": {
+        "word_count": 560,
+        "paragraph_count": 8
+      }
+    },
+    {
+      "story_id": "S08",
+      "title": "The Unexpected Journey of the Broken Compass",
+      "story_text": "On a bright spring morning, Emma discovered an old, rusty compass in her late grandfather’s attic. The small device was covered in dust, its glass face cracked but the needle still twitching with life. Curious, she decided to take it on a hike through the nearby forest, hoping to uncover the stories behind the mysterious object. As she packed her backpack with essentials—water, snacks, a map, and a flashlight—she felt a surge of excitement mixed with a hint of nervousness. The compass seemed to beckon her towards adventure.\n\nEmma stepped onto the forest trail, the sun filtering through the tall oaks, casting dappled shadows on the ground. She glanced down at the compass, noticing the needle pointed steadily north, though oddly, the path she was on veered east. Trusting the compass, she chose to follow its direction instead of the worn trail. After about twenty minutes of walking, she arrived at a small clearing she had never seen before. Wildflowers bloomed vibrantly, and a gentle breeze carried the scent of pine and earth.\n\nIn the center of the clearing stood a weathered wooden bench with a carved inscription: “For those who seek, the path will reveal.” Emma sat down, pondering the meaning. Suddenly, a rustling sound came from the bushes nearby. She stood up cautiously and saw a small fox emerging, its fur a mix of orange and white. The fox looked at her curiously before trotting away, glancing back as if inviting her to follow. Intrigued, Emma picked up her pace to keep the animal in sight.\n\nThe fox led her deeper into the woods, where the trees grew denser and the light dimmer. Emma’s heart raced as she navigated through the underbrush, relying on the compass and the fox’s guidance. After about half an hour, they reached a narrow stream with crystal-clear water. The fox stopped, drinking from the bank, then looked up at Emma expectantly. She realized she needed to cross the stream to continue.\n\nSearching for a safe crossing, Emma spotted a fallen log nearby. She carefully balanced as she stepped onto it, inching her way across the slippery surface. Halfway over, the log shifted slightly, causing her to stumble, but she managed to regain her footing. On the other side, the fox waited patiently, its eyes gleaming with encouragement. Emma smiled, feeling a newfound confidence.\n\nContinuing their journey, the compass needle began to spin erratically, no longer pointing north. Emma frowned, unsure of what to do next. The fox suddenly darted ahead, disappearing behind a cluster of bushes. Emma hurried after it and found herself at the entrance of a hidden cave. The air was cool and damp, and faint echoes whispered from within. She hesitated but decided to explore, lighting her flashlight.\n\nInside the cave, the walls glistened with minerals, casting shimmering reflections. Emma noticed ancient markings etched into the stone, depicting scenes of travelers and explorers. As she ventured deeper, she stumbled upon a small wooden chest partially buried in the dirt. Opening it carefully, she found a collection of old letters, photographs, and a journal belonging to her grandfather. Her hands trembled as she read his words, revealing his own adventures and the significance of the compass.\n\nEmma realized that the compass was not just a tool for navigation but a symbol of guidance and courage passed down through generations. Inspired, she decided to return home and preserve her grandfather’s legacy. Exiting the cave, she felt a sense of accomplishment and connection to her family’s history. The fox appeared once more, giving a soft yip before disappearing into the forest.\n\nAs Emma retraced her steps back to the trailhead, the compass needle steadied, pointing true north again. The sun was beginning to set, painting the sky with hues of orange and pink. She felt grateful for the unexpected journey, the lessons learned, and the mysterious guide that led her through the unknown. That night, she placed the compass on her desk, a reminder that sometimes, the best adventures start with a single, uncertain step.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Emma find first in her grandfather's attic?",
+          "options": {
+            "A": "A wooden chest",
+            "B": "An old compass",
+            "C": "A flashlight",
+            "D": "A journal"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "Before following the fox, what did Emma do at the clearing?",
+          "options": {
+            "A": "She opened the wooden chest",
+            "B": "She sat on a bench and read an inscription",
+            "C": "She crossed a stream",
+            "D": "She lit her flashlight"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q03",
+          "question": "Which item did Emma NOT pack for her hike?",
+          "options": {
+            "A": "Map",
+            "B": "Water",
+            "C": "Compass",
+            "D": "Snacks"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q04",
+          "question": "What happened immediately after Emma crossed the stream?",
+          "options": {
+            "A": "The compass needle began spinning erratically",
+            "B": "She found the hidden cave",
+            "C": "The fox appeared for the first time",
+            "D": "She sat on the wooden bench"
+          },
+          "difficulty": "hard",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q05",
+          "question": "What was unusual about the compass needle when Emma first looked at it on the trail?",
+          "options": {
+            "A": "It pointed south instead of north",
+            "B": "It was stuck and didn't move",
+            "C": "It pointed north but the path went east",
+            "D": "It was missing"
+          },
+          "difficulty": "easy",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What did Emma discover inside the cave?",
+          "options": {
+            "A": "A sleeping fox",
+            "B": "Ancient markings and a wooden chest",
+            "C": "A map to another forest",
+            "D": "A hidden trail leading north"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q07",
+          "question": "What did Emma do right after the compass needle started spinning erratically?",
+          "options": {
+            "A": "She decided to turn back",
+            "B": "She followed the fox into the bushes",
+            "C": "She sat down to rest",
+            "D": "She crossed the stream"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q08",
+          "question": "Which event happened last during Emma's adventure?",
+          "options": {
+            "A": "Emma found her grandfather’s journal",
+            "B": "Emma crossed a slippery log",
+            "C": "The fox gave a soft yip and disappeared",
+            "D": "Emma packed her backpack"
+          },
+          "difficulty": "easy",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q09",
+          "question": "What did Emma realize about the compass after reading her grandfather’s journal?",
+          "options": {
+            "A": "It was broken and useless",
+            "B": "It was a symbol of guidance and courage",
+            "C": "It belonged to another explorer",
+            "D": "It was made of gold"
+          },
+          "difficulty": "hard",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q10",
+          "question": "Which of the following happened first during Emma's hike?",
+          "options": {
+            "A": "The compass needle spun erratically",
+            "B": "Emma found the hidden cave",
+            "C": "Emma followed the compass north instead of the trail east",
+            "D": "Emma crossed the stream"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        }
+      ],
+      "stats": {
+        "word_count": 672,
+        "paragraph_count": 9
+      }
+    },
+    {
+      "story_id": "S09",
+      "title": "The Unexpected Journey of Clara and the Lost Map",
+      "story_text": "Clara had always been fascinated by old maps, so when she discovered a dusty, rolled-up parchment in her grandmother’s attic, she felt an immediate surge of excitement. The map was faded and tattered, but it clearly depicted a mysterious island with a red X marked near the center. Determined to uncover its secrets, Clara decided to embark on an adventure to find the island and see what the X signified.\n\nThe next morning, Clara packed a small backpack with essentials: water, snacks, a compass, and her trusty notebook. She told her parents she was going on a short hike nearby, but in truth, she planned to catch the earliest ferry to the harbor town where the map suggested the island lay. As she boarded the ferry, the salty sea air filled her lungs, and anticipation bubbled inside her.\n\nUpon arriving at the harbor, Clara approached the local marina and asked around for boats heading toward the island. A weathered fisherman named Tom agreed to take her there for a modest fee, warning her that the waters could be tricky and the island was uninhabited. Clara nodded eagerly, and soon they were cutting through the waves, the island growing larger on the horizon.\n\nOnce ashore, Clara stepped onto the sandy beach, the sun warming her face. She pulled out the map and began comparing it to the surroundings. The island was dense with trees and winding paths, just as the map had shown. She decided to follow a narrow trail that seemed to lead toward the center, where the red X was marked.\n\nAs she walked, Clara noticed vibrant flowers and heard the chirping of unfamiliar birds. The island felt alive, almost magical. Suddenly, she stumbled over a root and dropped her notebook. When she picked it up, she saw a strange symbol sketched in the dirt nearby. Curious, she traced it with her finger and realized it matched a marking on the map’s corner.\n\nEncouraged by this clue, Clara pressed on until she reached a clearing. In the middle stood an old stone pedestal, partially covered in moss. On top of it lay a small wooden box. Her heart pounding, Clara opened the box carefully. Inside, she found a collection of antique coins and a folded letter written in elegant handwriting.\n\nThe letter told the story of a sailor who had hidden his treasure on the island centuries ago, hoping it would one day be found by someone worthy. Clara felt a deep connection to the sailor’s words and decided to document her discovery thoroughly. She took photos of the coins and the pedestal, carefully placing everything back as she found it.\n\nAs the sun began to dip toward the horizon, Clara made her way back to the beach. The journey had taken longer than expected, and she worried about missing the last ferry. Tom was waiting patiently, and together they sailed back to the mainland, the sky painted in hues of orange and pink.\n\nBack home, Clara shared her adventure with her family, showing them the photos and reading the letter aloud. Her parents were amazed and proud of her courage and curiosity. That night, Clara lay in bed, the map and letter on her desk, already dreaming of her next great adventure.\n\nThe discovery had changed Clara. She realized that the world was full of hidden stories waiting to be uncovered, and she was ready to seek them out, one journey at a time.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Clara find in her grandmother's attic that sparked her adventure?",
+          "options": {
+            "A": "An old compass",
+            "B": "A dusty, rolled-up map",
+            "C": "A wooden box",
+            "D": "A folded letter"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "What did Clara do immediately after arriving at the harbor town?",
+          "options": {
+            "A": "She boarded the ferry",
+            "B": "She asked around for boats to the island",
+            "C": "She unpacked her backpack",
+            "D": "She read the letter"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q03",
+          "question": "Which item did Clara drop while walking on the island?",
+          "options": {
+            "A": "Her compass",
+            "B": "The map",
+            "C": "Her notebook",
+            "D": "The wooden box"
+          },
+          "difficulty": "easy",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q04",
+          "question": "What did Clara notice near where she dropped her notebook?",
+          "options": {
+            "A": "A hidden path",
+            "B": "A strange symbol in the dirt",
+            "C": "A nest of birds",
+            "D": "An old stone pedestal"
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q05",
+          "question": "What was inside the wooden box Clara found on the island?",
+          "options": {
+            "A": "A compass and a map",
+            "B": "A collection of antique coins and a letter",
+            "C": "Snacks and water",
+            "D": "A fisherman’s tools"
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What did Clara do after opening the wooden box and examining its contents?",
+          "options": {
+            "A": "She took the coins home",
+            "B": "She left the box and pedestal as they were",
+            "C": "She buried the box again",
+            "D": "She went back to the ferry immediately"
+          },
+          "difficulty": "hard",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q07",
+          "question": "Which event happened last during Clara’s adventure?",
+          "options": {
+            "A": "Clara talked to the fisherman Tom",
+            "B": "Clara opened the wooden box",
+            "C": "Clara shared her adventure with her family",
+            "D": "Clara found the strange symbol in the dirt"
+          },
+          "difficulty": "medium",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q08",
+          "question": "What did Clara do before boarding the ferry to the harbor town?",
+          "options": {
+            "A": "Packed her backpack with essentials",
+            "B": "Opened the wooden box",
+            "C": "Talked to her parents about the island",
+            "D": "Found the strange symbol in the dirt"
+          },
+          "difficulty": "easy",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q09",
+          "question": "What did the letter inside the box reveal about the treasure?",
+          "options": {
+            "A": "It was left by a sailor centuries ago",
+            "B": "It belonged to Clara’s grandmother",
+            "C": "It was a recent hiding by the fisherman",
+            "D": "It was a gift for whoever found the island"
+          },
+          "difficulty": "medium",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q10",
+          "question": "What did Clara do first after stepping onto the island’s beach?",
+          "options": {
+            "A": "Followed a narrow trail toward the center",
+            "B": "Compared the map to the surroundings",
+            "C": "Talked to the fisherman Tom",
+            "D": "Opened the wooden box"
+          },
+          "difficulty": "hard",
+          "answer": "B"
+        }
+      ],
+      "stats": {
+        "word_count": 576,
+        "paragraph_count": 10
+      }
+    },
+    {
+      "story_id": "S10",
+      "title": "The Unexpected Journey of Clara Benson",
+      "story_text": "Clara Benson had always lived a quiet life in the small town of Maplewood, where the days passed slowly and predictably. One crisp autumn morning, as she sipped her coffee by the window, a letter arrived that would change everything. It was an invitation to participate in a treasure hunt organized by a mysterious benefactor, promising an adventure unlike any other. Intrigued and eager to break free from her routine, Clara decided to accept the challenge.\n\nThe following day, Clara packed a small backpack with essentials: a map, a compass, some snacks, and a notebook to record her findings. She set out early, the sun just beginning to rise over the horizon, casting golden light on the colorful leaves. Her first destination was an old oak tree marked on the map at the edge of town. Upon arrival, she noticed a carved symbol on the trunk, matching a clue in the letter. Beneath the tree, she found a small box containing the next clue—a riddle that pointed her toward the abandoned railway station.\n\nAt the railway station, Clara carefully examined the graffiti-covered walls and rusted tracks. She spotted a faded mural of a train, beneath which was hidden a tiny key taped to the wall. Using the key, she unlocked a weathered locker nearby, revealing a folded piece of parchment with a poem hinting at the next location: the town’s old library. Excitement bubbled within her as she realized the hunt was leading her through places she had always passed by but never truly explored.\n\nArriving at the library, Clara navigated the dusty aisles until she found a book titled \"Maplewood’s Forgotten History.\" Inside, a bookmark held a cryptic message directing her to the clock tower in the town square. She hurried there, watching as the clock hands inched closer to noon. At the base of the tower, she discovered a loose brick concealing a small compartment. Inside was a compass rose etched on a piece of leather, along with coordinates pointing to the nearby forest.\n\nClara ventured into the forest, the canopy filtering sunlight onto the leaf-strewn path. Following the coordinates, she reached a clearing where an ancient stone well stood. Peering inside, she spotted a lantern hanging from a hook midway down. She lowered herself carefully and retrieved the lantern, which contained a folded map with a trail marked in red leading to a hilltop.\n\nThe climb was steep but invigorating. At the summit, Clara found a weathered bench overlooking the town. Beneath the seat was a metal box secured with a combination lock. Consulting her notes, she deduced the code from the series of numbers found in the poem at the railway station. The lock clicked open, revealing a journal filled with stories from past adventurers and a final clue directing her to the old lighthouse by the coast.\n\nDetermined, Clara made her way to the lighthouse as the sun began to set, painting the sky in hues of orange and pink. Inside, she climbed the spiral staircase to the lantern room. There, resting on a wooden table, was a sealed envelope addressed to her. Inside the envelope was a letter congratulating her on completing the treasure hunt and an invitation to join a secret society dedicated to preserving local history and adventure.\n\nAs night fell, Clara stood outside the lighthouse, the ocean breeze cool against her skin. She felt a deep sense of fulfillment and excitement for the new chapter ahead. The journey had not only taken her across familiar landscapes but had also awakened a passion for exploration and discovery she never knew she had.\n\nReturning home, Clara carefully placed the journal and letter on her desk, already planning her next adventure. The quiet town of Maplewood would never seem the same again, and neither would she. The unexpected journey had transformed her life, proving that sometimes, the greatest treasures are found when you step outside your comfort zone.",
+      "questions": [
+        {
+          "q_id": "Q01",
+          "question": "What did Clara do immediately after receiving the invitation letter?",
+          "options": {
+            "A": "She packed her backpack with essentials.",
+            "B": "She accepted the challenge to participate.",
+            "C": "She went to the old oak tree.",
+            "D": "She wrote a letter back to the benefactor."
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q02",
+          "question": "Which item did Clara find first at the old oak tree?",
+          "options": {
+            "A": "A small box with the next clue.",
+            "B": "A carved symbol on the trunk.",
+            "C": "A folded map with a trail marked in red.",
+            "D": "A tiny key taped to the wall."
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q03",
+          "question": "What was Clara’s next destination after the old oak tree?",
+          "options": {
+            "A": "The town’s old library.",
+            "B": "The abandoned railway station.",
+            "C": "The clock tower in the town square.",
+            "D": "The nearby forest."
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q04",
+          "question": "What did Clara use the tiny key for?",
+          "options": {
+            "A": "To open a metal box at the hilltop.",
+            "B": "To unlock a weathered locker at the railway station.",
+            "C": "To open the sealed envelope at the lighthouse.",
+            "D": "To unlock a compartment in the clock tower."
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q05",
+          "question": "Which clue directed Clara to the clock tower?",
+          "options": {
+            "A": "A poem found in the journal.",
+            "B": "Coordinates on a compass rose.",
+            "C": "A cryptic message inside a book.",
+            "D": "A riddle found in the small box."
+          },
+          "difficulty": "hard",
+          "answer": "C"
+        },
+        {
+          "q_id": "Q06",
+          "question": "What did Clara find at the base of the clock tower?",
+          "options": {
+            "A": "A loose brick hiding a compartment.",
+            "B": "A small box with a combination lock.",
+            "C": "A lantern hanging from a hook.",
+            "D": "A folded piece of parchment."
+          },
+          "difficulty": "medium",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q07",
+          "question": "What was the final location Clara visited in the treasure hunt?",
+          "options": {
+            "A": "The hilltop bench.",
+            "B": "The old lighthouse by the coast.",
+            "C": "The ancient stone well in the forest.",
+            "D": "The abandoned railway station."
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q08",
+          "question": "Which clue helped Clara open the metal box at the hilltop?",
+          "options": {
+            "A": "Numbers found in the poem at the railway station.",
+            "B": "Coordinates from the compass rose.",
+            "C": "A riddle from the small box under the oak tree.",
+            "D": "A cryptic message from the library book."
+          },
+          "difficulty": "hard",
+          "answer": "A"
+        },
+        {
+          "q_id": "Q09",
+          "question": "What did Clara discover inside the sealed envelope at the lighthouse?",
+          "options": {
+            "A": "A map to a new treasure hunt.",
+            "B": "A letter inviting her to a secret society.",
+            "C": "A poem about Maplewood’s history.",
+            "D": "A key to the town’s old library."
+          },
+          "difficulty": "medium",
+          "answer": "B"
+        },
+        {
+          "q_id": "Q10",
+          "question": "What was Clara’s feeling after completing the treasure hunt?",
+          "options": {
+            "A": "Disappointment at the lack of treasure.",
+            "B": "Fulfillment and excitement for new adventures.",
+            "C": "Confusion about the clues.",
+            "D": "Reluctance to return home."
+          },
+          "difficulty": "easy",
+          "answer": "B"
+        }
+      ],
+      "stats": {
+        "word_count": 654,
+        "paragraph_count": 9
+      }
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-05-03T20:43:38.873086+00:00",
+    "seed": 42,
+    "trial_design": "random_two_docs_two_distinct_levels",
+    "n_trials_requested": 1000,
+    "strict_llm_coverage": false,
+    "levels": [
+      "biography",
+      "distractor",
+      "reading_level",
+      "redundant"
+    ],
+    "prompt_conditions": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "eval_conditions": [
+      "C1",
+      "C2",
+      "C3",
+      "compactor"
+    ],
+    "human_dir": "application/approved_runs",
+    "llm_out_root": "application/out",
+    "task_name": "application_reading_qa",
+    "compactor": {
+      "skipped": false,
+      "root": "application/compactor",
+      "rows_merged_by_model": {
+        "anthropic_claude-opus-4.6": 100,
+        "openai_gpt-5.4": 100,
+        "meta-llama_llama-3-8b-instruct": 100,
+        "meta-llama_llama-3.3-70b-instruct": 100,
+        "qwen_qwen3-30b-a3b-instruct-2507": 100,
+        "qwen_qwen3-30b-a3b-thinking-2507": 100,
+        "qwen_qwen3-8b_thinking_true": 100,
+        "qwen_qwen3-8b_thinking_false": 100,
+        "qwen_qwen3-next-80b-a3b-instruct": 100
+      }
+    }
+  },
+  "models": [
+    {
+      "model": "anthropic_claude-opus-4.6",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 336,
+        "C2": 378,
+        "C3": 277,
+        "compactor": 294
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5052631578947369,
+        "C2": 0.5346534653465347,
+        "C3": 0.4726962457337884,
+        "compactor": 0.44954128440366975
+      },
+      "accuracy_C1": 0.5052631578947369,
+      "accuracy_C2": 0.5346534653465347,
+      "accuracy_C3": 0.4726962457337884,
+      "accuracy_compactor": 0.44954128440366975,
+      "n_trial_generation_attempts": 1000
+    },
+    {
+      "model": "meta-llama_llama-3-8b-instruct",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 328,
+        "C2": 333,
+        "C3": 315,
+        "compactor": 436
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.4932330827067669,
+        "C2": 0.471004243281471,
+        "C3": 0.537542662116041,
+        "compactor": 0.6666666666666666
+      },
+      "accuracy_C1": 0.4932330827067669,
+      "accuracy_C2": 0.471004243281471,
+      "accuracy_C3": 0.537542662116041,
+      "accuracy_compactor": 0.6666666666666666,
+      "n_trial_generation_attempts": 1000
+    },
+    {
+      "model": "meta-llama_llama-3.3-70b-instruct",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 327,
+        "C2": 337,
+        "C3": 294,
+        "compactor": 283
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.4917293233082707,
+        "C2": 0.4766619519094767,
+        "C3": 0.5017064846416383,
+        "compactor": 0.4327217125382263
+      },
+      "accuracy_C1": 0.4917293233082707,
+      "accuracy_C2": 0.4766619519094767,
+      "accuracy_C3": 0.5017064846416383,
+      "accuracy_compactor": 0.4327217125382263,
+      "n_trial_generation_attempts": 1000
+    },
+    {
+      "model": "openai_gpt-5.4",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 341,
+        "C2": 335,
+        "C3": 235,
+        "compactor": 279
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.512781954887218,
+        "C2": 0.4738330975954738,
+        "C3": 0.40102389078498296,
+        "compactor": 0.42660550458715596
+      },
+      "accuracy_C1": 0.512781954887218,
+      "accuracy_C2": 0.4738330975954738,
+      "accuracy_C3": 0.40102389078498296,
+      "accuracy_compactor": 0.42660550458715596,
+      "n_trial_generation_attempts": 1000
+    },
+    {
+      "model": "qwen_qwen3-30b-a3b-instruct-2507",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 341,
+        "C2": 356,
+        "C3": 292,
+        "compactor": 278
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.512781954887218,
+        "C2": 0.5035360678925035,
+        "C3": 0.49829351535836175,
+        "compactor": 0.42507645259938837
+      },
+      "accuracy_C1": 0.512781954887218,
+      "accuracy_C2": 0.5035360678925035,
+      "accuracy_C3": 0.49829351535836175,
+      "accuracy_compactor": 0.42507645259938837,
+      "n_trial_generation_attempts": 1000
+    },
+    {
+      "model": "qwen_qwen3-30b-a3b-thinking-2507",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 337,
+        "C2": 353,
+        "C3": 333,
+        "compactor": 368
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5067669172932331,
+        "C2": 0.49929278642149927,
+        "C3": 0.568259385665529,
+        "compactor": 0.5626911314984709
+      },
+      "accuracy_C1": 0.5067669172932331,
+      "accuracy_C2": 0.49929278642149927,
+      "accuracy_C3": 0.568259385665529,
+      "accuracy_compactor": 0.5626911314984709,
+      "n_trial_generation_attempts": 1000
+    },
+    {
+      "model": "qwen_qwen3-8b_thinking_false",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 331,
+        "C2": 351,
+        "C3": 304,
+        "compactor": 330
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.49774436090225566,
+        "C2": 0.49646393210749645,
+        "C3": 0.5187713310580204,
+        "compactor": 0.5045871559633027
+      },
+      "accuracy_C1": 0.49774436090225566,
+      "accuracy_C2": 0.49646393210749645,
+      "accuracy_C3": 0.5187713310580204,
+      "accuracy_compactor": 0.5045871559633027,
+      "n_trial_generation_attempts": 1000
+    },
+    {
+      "model": "qwen_qwen3-8b_thinking_true",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 332,
+        "C2": 360,
+        "C3": 260,
+        "compactor": 328
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.4992481203007519,
+        "C2": 0.5091937765205092,
+        "C3": 0.44368600682593856,
+        "compactor": 0.5015290519877675
+      },
+      "accuracy_C1": 0.4992481203007519,
+      "accuracy_C2": 0.5091937765205092,
+      "accuracy_C3": 0.44368600682593856,
+      "accuracy_compactor": 0.5015290519877675,
+      "n_trial_generation_attempts": 1000
+    },
+    {
+      "model": "qwen_qwen3-next-80b-a3b-instruct",
+      "n_docs_in_pool": 10,
+      "n_trials_drawn": 1000,
+      "n_trials_human_defined": 831,
+      "hits": {
+        "C1": 336,
+        "C2": 351,
+        "C3": 277,
+        "compactor": 375
+      },
+      "denom": {
+        "C1": 665,
+        "C2": 707,
+        "C3": 586,
+        "compactor": 654
+      },
+      "accuracy_by_condition": {
+        "C1": 0.5052631578947369,
+        "C2": 0.49646393210749645,
+        "C3": 0.4726962457337884,
+        "compactor": 0.573394495412844
+      },
+      "accuracy_C1": 0.5052631578947369,
+      "accuracy_C2": 0.49646393210749645,
+      "accuracy_C3": 0.4726962457337884,
+      "accuracy_compactor": 0.573394495412844,
+      "n_trial_generation_attempts": 1000
+    }
+  ]
+}

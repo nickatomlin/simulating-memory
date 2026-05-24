@@ -1,0 +1,236 @@
+{
+    "meta": {
+      "task": "map_navigation_mcq",
+      "n_maps": 3,
+      "questions_per_map": 5,
+      "difficulty_levels": ["simple", "medium", "hard"],
+      "notes": [
+        "All questions use (start, goal) pairs that are NOT directly connected by an edge.",
+        "Each question provides exactly 2 choices: one valid route and one invalid route.",
+        "Each map uses a disjoint set of location names to avoid cross-map memory mixing.",
+        "Correct answers are balanced across A/B within each map as much as possible."
+      ],
+      "version": "1.0"
+    },
+    "items": [
+      {
+        "map_id": "M0001",
+        "difficulty": "simple",
+        "k": 4,
+        "locations": ["Home", "School", "Park", "Cafe"],
+        "edges": [["Home", "Cafe"], ["Cafe", "School"], ["Cafe", "Park"]],
+        "questions": [
+          {
+            "q_id": "Q01",
+            "start": "Home",
+            "goal": "School",
+            "prompt": "You are at Home. How do you get to School?",
+            "choices": [
+              { "choice_id": "A", "route": ["Home", "Park", "School"] },
+              { "choice_id": "B", "route": ["Home", "Cafe", "School"] }
+            ],
+            "answer": "B"
+          },
+          {
+            "q_id": "Q02",
+            "start": "School",
+            "goal": "Park",
+            "prompt": "You are at School. How do you get to Park?",
+            "choices": [
+              { "choice_id": "A", "route": ["School", "Cafe", "Park"] },
+              { "choice_id": "B", "route": ["School", "Home", "Park"] }
+            ],
+            "answer": "A"
+          },
+          {
+            "q_id": "Q03",
+            "start": "Park",
+            "goal": "Home",
+            "prompt": "You are at Park. How do you get to Home?",
+            "choices": [
+              { "choice_id": "A", "route": ["Park", "School", "Home"] },
+              { "choice_id": "B", "route": ["Park", "Cafe", "Home"] }
+            ],
+            "answer": "B"
+          },
+          {
+            "q_id": "Q04",
+            "start": "Home",
+            "goal": "Park",
+            "prompt": "You are at Home. How do you get to Park?",
+            "choices": [
+              { "choice_id": "A", "route": ["Home", "Cafe", "Park"] },
+              { "choice_id": "B", "route": ["Home", "School", "Park"] }
+            ],
+            "answer": "A"
+          },
+          {
+            "q_id": "Q05",
+            "start": "School",
+            "goal": "Home",
+            "prompt": "You are at School. How do you get to Home?",
+            "choices": [
+              { "choice_id": "A", "route": ["School", "Park", "Home"] },
+              { "choice_id": "B", "route": ["School", "Cafe", "Home"] }
+            ],
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "map_id": "M0002",
+        "difficulty": "medium",
+        "k": 6,
+        "locations": ["Apartment", "Office", "Gym", "Library", "Bakery", "Metro"],
+        "edges": [
+          ["Apartment", "Metro"],
+          ["Metro", "Office"],
+          ["Office", "Library"],
+          ["Metro", "Bakery"],
+          ["Bakery", "Gym"],
+          ["Gym", "Library"]
+        ],
+        "questions": [
+          {
+            "q_id": "Q01",
+            "start": "Apartment",
+            "goal": "Library",
+            "prompt": "You are at Apartment. How do you get to Library?",
+            "choices": [
+              { "choice_id": "A", "route": ["Apartment", "Metro", "Office", "Library"] },
+              { "choice_id": "B", "route": ["Apartment", "Office", "Library"] }
+            ],
+            "answer": "A"
+          },
+          {
+            "q_id": "Q02",
+            "start": "Bakery",
+            "goal": "Office",
+            "prompt": "You are at Bakery. How do you get to Office?",
+            "choices": [
+              { "choice_id": "A", "route": ["Bakery", "Library", "Office"] },
+              { "choice_id": "B", "route": ["Bakery", "Metro", "Office"] }
+            ],
+            "answer": "B"
+          },
+          {
+            "q_id": "Q03",
+            "start": "Gym",
+            "goal": "Apartment",
+            "prompt": "You are at Gym. How do you get to Apartment?",
+            "choices": [
+              { "choice_id": "A", "route": ["Gym", "Office", "Metro", "Apartment"] },
+              { "choice_id": "B", "route": ["Gym", "Bakery", "Metro", "Apartment"] }
+            ],
+            "answer": "B"
+          },
+          {
+            "q_id": "Q04",
+            "start": "Apartment",
+            "goal": "Gym",
+            "prompt": "You are at Apartment. How do you get to Gym?",
+            "choices": [
+              { "choice_id": "A", "route": ["Apartment", "Metro", "Bakery", "Gym"] },
+              { "choice_id": "B", "route": ["Apartment", "Metro", "Office", "Gym"] }
+            ],
+            "answer": "A"
+          },
+          {
+            "q_id": "Q05",
+            "start": "Library",
+            "goal": "Bakery",
+            "prompt": "You are at Library. How do you get to Bakery?",
+            "choices": [
+              { "choice_id": "A", "route": ["Library", "Office", "Bakery"] },
+              { "choice_id": "B", "route": ["Library", "Gym", "Bakery"] }
+            ],
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "map_id": "M0003",
+        "difficulty": "hard",
+        "k": 8,
+        "locations": [
+          "Harbor",
+          "Observatory",
+          "Quarry",
+          "Embassy",
+          "Theater",
+          "Stadium",
+          "BotanicalGarden",
+          "Warehouse"
+        ],
+        "edges": [
+          ["Harbor", "Warehouse"],
+          ["Warehouse", "Quarry"],
+          ["Quarry", "Embassy"],
+          ["Embassy", "Theater"],
+          ["Theater", "Observatory"],
+          ["Observatory", "BotanicalGarden"],
+          ["BotanicalGarden", "Stadium"],
+          ["Stadium", "Harbor"],
+          ["Warehouse", "Theater"],
+          ["Embassy", "BotanicalGarden"]
+        ],
+        "questions": [
+          {
+            "q_id": "Q01",
+            "start": "Quarry",
+            "goal": "Observatory",
+            "prompt": "You are at Quarry. How do you get to Observatory?",
+            "choices": [
+              { "choice_id": "A", "route": ["Quarry", "Stadium", "BotanicalGarden", "Observatory"] },
+              { "choice_id": "B", "route": ["Quarry", "Warehouse", "Theater", "Observatory"] }
+            ],
+            "answer": "B"
+          },
+          {
+            "q_id": "Q02",
+            "start": "Harbor",
+            "goal": "BotanicalGarden",
+            "prompt": "You are at Harbor. How do you get to BotanicalGarden?",
+            "choices": [
+              { "choice_id": "A", "route": ["Harbor", "Stadium", "BotanicalGarden"] },
+              { "choice_id": "B", "route": ["Harbor", "Warehouse", "Quarry", "BotanicalGarden"] }
+            ],
+            "answer": "A"
+          },
+          {
+            "q_id": "Q03",
+            "start": "Embassy",
+            "goal": "Harbor",
+            "prompt": "You are at Embassy. How do you get to Harbor?",
+            "choices": [
+              { "choice_id": "A", "route": ["Embassy", "Observatory", "Theater", "Warehouse", "Harbor"] },
+              { "choice_id": "B", "route": ["Embassy", "BotanicalGarden", "Stadium", "Harbor"] }
+            ],
+            "answer": "B"
+          },
+          {
+            "q_id": "Q04",
+            "start": "Warehouse",
+            "goal": "BotanicalGarden",
+            "prompt": "You are at Warehouse. How do you get to BotanicalGarden?",
+            "choices": [
+              { "choice_id": "A", "route": ["Warehouse", "Theater", "Observatory", "BotanicalGarden"] },
+              { "choice_id": "B", "route": ["Warehouse", "Quarry", "Theater", "Observatory", "BotanicalGarden"] }
+            ],
+            "answer": "A"
+          },
+          {
+            "q_id": "Q05",
+            "start": "Stadium",
+            "goal": "Quarry",
+            "prompt": "You are at Stadium. How do you get to Quarry?",
+            "choices": [
+              { "choice_id": "A", "route": ["Stadium", "Theater", "Embassy", "Quarry"] },
+              { "choice_id": "B", "route": ["Stadium", "Harbor", "Warehouse", "Quarry"] }
+            ],
+            "answer": "B"
+          }
+        ]
+      }
+    ]
+  }
