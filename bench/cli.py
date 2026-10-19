@@ -188,6 +188,11 @@ def run(
     cfg["model"] = model_cfg
     cfg["run"] = run_cfg
 
+    if repeat is None and run_cfg.get("repeat") is not None:
+        repeat = int(run_cfg["repeat"])
+    if repeat is not None and repeat < 1:
+        raise typer.BadParameter("repeat must be positive")
+
     mpp = run_cfg.get("max_parallel_participants")
 
     # Derive a filesystem-safe model slug and nest output under it.
@@ -472,17 +477,16 @@ def run(
             fns.append(runner_fn)
         elif tname == "sum_digit_span_forward":
             c = task_cfg.get(tname, task_cfg.get("wm_digit_span_forward", {}))
-            if repeat is not None:
-                sequences_per_span = 2 * int(repeat)
-            else:
-                sequences_per_span = int(c.get("sequences_per_span", 20))
-            runner_fn = lambda fn=fn, c=c, _debug=debug, mpp=mpp: fn(
+            n_participants_val = int(repeat) if repeat is not None else int(c.get("n_participants", 1))
+            sequences_per_span = int(c.get("sequences_per_span", 2))
+            runner_fn = lambda fn=fn, c=c, _debug=debug, mpp=mpp, n_participants_val=n_participants_val, sequences_per_span=sequences_per_span: fn(
                 llm, out_dir,
                 model_cfg=model_cfg,
                 stimuli_seed=int(c.get("stimuli_seed", run_cfg.get("seed", 42))),
                 min_span=int(c.get("min_span", 2)),
                 max_span=int(c.get("max_span", 20)),
                 sequences_per_span=sequences_per_span,
+                n_participants=n_participants_val,
                 temperature=float(c.get("temperature", model_cfg.get("temperature", 0.0))),
                 debug=_debug,
                 max_parallel_participants=mpp,
@@ -491,17 +495,16 @@ def run(
             fns.append(runner_fn)
         elif tname == "sum_digit_span_reverse":
             c = task_cfg.get(tname, task_cfg.get("wm_digit_span_reverse", {}))
-            if repeat is not None:
-                sequences_per_span = 2 * int(repeat)
-            else:
-                sequences_per_span = int(c.get("sequences_per_span", 20))
-            runner_fn = lambda fn=fn, c=c, _debug=debug, mpp=mpp: fn(
+            n_participants_val = int(repeat) if repeat is not None else int(c.get("n_participants", 1))
+            sequences_per_span = int(c.get("sequences_per_span", 2))
+            runner_fn = lambda fn=fn, c=c, _debug=debug, mpp=mpp, n_participants_val=n_participants_val, sequences_per_span=sequences_per_span: fn(
                 llm, out_dir,
                 model_cfg=model_cfg,
                 stimuli_seed=int(c.get("stimuli_seed", run_cfg.get("seed", 42))),
                 min_span=int(c.get("min_span", 2)),
                 max_span=int(c.get("max_span", 20)),
                 sequences_per_span=sequences_per_span,
+                n_participants=n_participants_val,
                 temperature=float(c.get("temperature", model_cfg.get("temperature", 0.0))),
                 debug=_debug,
                 max_parallel_participants=mpp,
@@ -664,37 +667,37 @@ def run(
             fns.append(runner_fn)
         elif tname == "wm_digit_span_forward":
             c = task_cfg.get("wm_digit_span_forward", {})
-            if repeat is not None:
-                sequences_per_span = 2 * int(repeat)
-            else:
-                sequences_per_span = int(c.get("sequences_per_span", 20))
-            runner_fn = lambda fn=fn, c=c, _debug=debug: fn(
+            n_participants_val = int(repeat) if repeat is not None else int(c.get("n_participants", 1))
+            sequences_per_span = int(c.get("sequences_per_span", 2))
+            runner_fn = lambda fn=fn, c=c, _debug=debug, mpp=mpp, n_participants_val=n_participants_val, sequences_per_span=sequences_per_span: fn(
                 llm, out_dir,
                 model_cfg=model_cfg,
                 stimuli_seed=int(c.get("stimuli_seed", run_cfg.get("seed", 42))),
                 min_span=int(c.get("min_span", 2)),
                 max_span=int(c.get("max_span", 20)),
                 sequences_per_span=sequences_per_span,
+                n_participants=n_participants_val,
                 temperature=float(c.get("temperature", model_cfg.get("temperature", 0.0))),
                 debug=_debug,
+                max_parallel_participants=mpp,
             )
             runner_fn.task_name = tname
             fns.append(runner_fn)
         elif tname == "wm_digit_span_reverse":
             c = task_cfg.get("wm_digit_span_reverse", {})
-            if repeat is not None:
-                sequences_per_span = 2 * int(repeat)
-            else:
-                sequences_per_span = int(c.get("sequences_per_span", 20))
-            runner_fn = lambda fn=fn, c=c, _debug=debug: fn(
+            n_participants_val = int(repeat) if repeat is not None else int(c.get("n_participants", 1))
+            sequences_per_span = int(c.get("sequences_per_span", 2))
+            runner_fn = lambda fn=fn, c=c, _debug=debug, mpp=mpp, n_participants_val=n_participants_val, sequences_per_span=sequences_per_span: fn(
                 llm, out_dir,
                 model_cfg=model_cfg,
                 stimuli_seed=int(c.get("stimuli_seed", run_cfg.get("seed", 42))),
                 min_span=int(c.get("min_span", 2)),
                 max_span=int(c.get("max_span", 20)),
                 sequences_per_span=sequences_per_span,
+                n_participants=n_participants_val,
                 temperature=float(c.get("temperature", model_cfg.get("temperature", 0.0))),
                 debug=_debug,
+                max_parallel_participants=mpp,
             )
             runner_fn.task_name = tname
             fns.append(runner_fn)

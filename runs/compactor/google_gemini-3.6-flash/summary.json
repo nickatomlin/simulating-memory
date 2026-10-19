@@ -1,0 +1,285 @@
+{
+  "tasks": [
+    {
+      "task": "wm_digit_span_forward",
+      "n_participants": 1,
+      "stimuli_seed_base": 42,
+      "participant_seeds": [
+        42
+      ],
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 1,
+          "metrics": {
+            "digit_span": 12.0,
+            "exact": 0.9083333333333333,
+            "prefix_acc": 0.9905725177600176,
+            "has_S": 0.99625,
+            "slot_utilization": 0.7022916666666666
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 0.995,
+              "8": 0.995,
+              "9": 0.995,
+              "10": 0.98,
+              "11": 0.99,
+              "12": 0.945,
+              "13": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_digit_span_reverse",
+      "n_participants": 1,
+      "stimuli_seed_base": 42,
+      "participant_seeds": [
+        42
+      ],
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 1,
+          "metrics": {
+            "digit_span": 12.0,
+            "exact": 0.68125,
+            "has_S": 0.6883333333333334,
+            "slot_utilization": 0.7023958333333333
+          },
+          "breakdown": {
+            "exact_by_span": {
+              "2": 1.0,
+              "3": 1.0,
+              "4": 0.995,
+              "5": 0.99,
+              "6": 0.975,
+              "7": 0.86,
+              "8": 0.765,
+              "9": 0.73,
+              "10": 0.44,
+              "11": 0.22,
+              "12": 0.2,
+              "13": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_semantic_story_recall",
+      "repeats_per_stimulus": 100,
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 400,
+          "metrics": {
+            "embeddingSimilarity": 0.5626193289608831,
+            "bleuScore": 8.350888615095237e-06,
+            "coverage": 1.035,
+            "faithfulness": 4.0425,
+            "hallucination": 1.94,
+            "slot_utilization": 0.994375
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_nback",
+      "meta": {
+        "matched_html": true,
+        "html_constants": {
+          "TRIALS_PER_BLOCK": 14,
+          "TARGET_RATIO": 0.3333333333333333,
+          "STIMULUS_MS": 500,
+          "ISI_MS": 2000,
+          "BLOCK_INTRO_MS": 2500,
+          "N_LEVELS": [
+            1,
+            2,
+            3
+          ],
+          "CONSONANTS": [
+            "B",
+            "C",
+            "D",
+            "F",
+            "G",
+            "H",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"
+          ]
+        },
+        "temperature": 0.0,
+        "n_repeat": 100,
+        "n_repeats_per_participant": 1,
+        "seed": 123,
+        "conditions": {
+          "C2": "Human cognitive limits framing"
+        },
+        "total_records": 300
+      },
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 300,
+          "metrics": {
+            "d_prime_mean": 1.4943342535901856,
+            "acc_over_14": 0.8635714285714285,
+            "acc_over_answered": 0.9722938804042482,
+            "answered_rate": 0.8821428571428572,
+            "slot_utilization": 0.4175
+          },
+          "breakdown": {
+            "d_prime_by_n": {
+              "1": 0.0,
+              "2": 1.8946838271697695,
+              "3": 2.5883189336007875
+            },
+            "acc_over_14_by_n": {
+              "1": 1.0,
+              "2": 0.8235714285714286,
+              "3": 0.7671428571428571
+            },
+            "answered_rate_by_n": {
+              "1": 1.0,
+              "2": 0.8457142857142856,
+              "3": 0.8007142857142857
+            }
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_word_recognition",
+      "n_participants": 100,
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 100,
+          "metrics": {
+            "score_mean": 4.43,
+            "score_min": 0,
+            "score_max": 7,
+            "slot_utilization": 0.7925
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_variable_mapping",
+      "n_participants": 100,
+      "n_runs_per_participant": 3,
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 300,
+          "n_participants": 100,
+          "n_runs_per_participant": 3,
+          "metrics": {
+            "score_mean": 9.0,
+            "score_min": 6,
+            "score_max": 10,
+            "slot_utilization": 0.9683333333333334
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_factual_qa",
+      "n_participants": 100,
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 100,
+          "metrics": {
+            "accuracy_mean": 0.268,
+            "correct_mean": 2.68,
+            "total_per_doc": 10,
+            "slot_utilization": 0.9925
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_narrative_qa",
+      "n_participants": 100,
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 100,
+          "metrics": {
+            "accuracy_mean": 0.20800000000000002,
+            "correct_mean": 2.08,
+            "total_per_story": 10,
+            "slot_utilization": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_map_task",
+      "n_participants": 100,
+      "n_maps_per_participant": 3,
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 300,
+          "metrics": {
+            "accuracy_mean": 0.6546666666666667,
+            "correct_total": 982,
+            "total_questions": 1500,
+            "slot_utilization": 0.6933333333333334
+          }
+        }
+      ]
+    },
+    {
+      "task": "wm_craft_task",
+      "n_participants": 100,
+      "n_tasks_per_participant": 3,
+      "conditions": [
+        {
+          "condition": "C2",
+          "condition_name": "Human cognitive limits framing",
+          "n": 300,
+          "metrics": {
+            "accuracy_mean": 0.7133333333333334,
+            "correct_total": 1070,
+            "total_questions": 1500,
+            "slot_utilization": 0.8216666666666667
+          }
+        }
+      ]
+    }
+  ]
+}

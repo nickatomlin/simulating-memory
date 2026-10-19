@@ -1,0 +1,17 @@
+{
+  "task": "wm_factual_qa",
+  "n_participants": 100,
+  "conditions": [
+    {
+      "condition": "C2",
+      "condition_name": "Human cognitive limits framing",
+      "n": 100,
+      "metrics": {
+        "accuracy_mean": 0.268,
+        "correct_mean": 2.68,
+        "total_per_doc": 10,
+        "slot_utilization": 0.9925
+      }
+    }
+  ]
+}

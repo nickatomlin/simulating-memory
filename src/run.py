@@ -34,7 +34,7 @@ Subset of tasks, smaller participant count, include the compactor agent:
 Notes
 -----
 - ``--repeat`` overrides the number of simulated participants per task
-  (the released runs used 50 per prompting task; we default to that).
+  (default 5; released prompting runs used 50).
 - ``--include-compactor`` additionally runs the ``wm_<task>`` agent
   variants, which is the 4-slot key-value memory module ("Compactor"
   in the paper).
@@ -190,7 +190,9 @@ def build_config(*,
                  out_dir: Path,
                  repeat: int,
                  temperature: float,
-                 max_tokens: int) -> dict:
+                 max_tokens: int,
+                 max_parallel_participants: int = 10,
+                 max_parallel_tasks: int = 5) -> dict:
     return {
         "model": {
             "backend": backend,
@@ -203,8 +205,8 @@ def build_config(*,
         "run": {
             "out_dir": str(out_dir),
             "seed": 42,
-            "max_parallel_participants": 10,
-            "max_parallel_tasks": 5,
+            "max_parallel_participants": max_parallel_participants,
+            "max_parallel_tasks": max_parallel_tasks,
             "repeat": int(repeat),
         },
         "task_config": _default_task_config(),
@@ -230,11 +232,18 @@ def main() -> None:
     parser.add_argument("--tasks", default=None,
                         help="Comma-separated subset of tasks. Default: all 10 "
                              "prompting tasks (plus all wm_ ones if --include-compactor).")
-    parser.add_argument("--include-compactor", action="store_true",
+    modes = parser.add_mutually_exclusive_group()
+    modes.add_argument("--include-compactor", action="store_true",
                         help="Also run the wm_<task> variants (4-slot key-value "
                              "memory agent, 'Compactor' in the paper).")
-    parser.add_argument("--repeat", type=int, default=50,
-                        help="Override n_participants per task (default: 50).")
+    modes.add_argument("--compactor-only", action="store_true",
+                       help="Run only wm_<task> variants of the selected tasks.")
+    parser.add_argument("--repeat", type=int, default=5,
+                        help="Participants per task (default: 5; Compactor free recall uses repeats per story).")
+    parser.add_argument("--max-parallel-participants", type=int, default=10)
+    parser.add_argument("--max-parallel-tasks", type=int, default=5)
+    parser.add_argument("--score", action="store_true", help="Score saved outputs against the expanded human cohort after completion.")
+    parser.add_argument("--overwrite", action="store_true", help="Allow replacing existing task outputs in the selected model directory.")
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--max-tokens", type=int, default=2048)
     parser.add_argument(
@@ -248,12 +257,21 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    if min(args.repeat, args.max_parallel_participants, args.max_parallel_tasks, args.max_tokens) < 1:
+        parser.error("Repeat, concurrency, and token limits must be positive")
+
     if args.tasks:
         chosen = [t.strip() for t in args.tasks.split(",") if t.strip()]
     else:
         chosen = list(PROMPTING_TASKS)
-        if args.include_compactor:
-            chosen += list(COMPACTOR_TASKS)
+
+    if args.include_compactor:
+        chosen += [f"wm_{t}" for t in chosen if t in PROMPTING_TASKS]
+    if args.compactor_only:
+        chosen = [f"wm_{t}" if t in PROMPTING_TASKS else t for t in chosen]
+    chosen = list(dict.fromkeys(chosen))
+    if not chosen:
+        parser.error("Select at least one task")
 
     unknown = [t for t in chosen if t not in PROMPTING_TASKS + COMPACTOR_TASKS]
     if unknown:
@@ -263,16 +281,25 @@ def main() -> None:
         model=args.model,
         backend=args.backend,
         base_url=args.base_url,
-        out_dir=args.out_dir,
+        out_dir=args.out_dir.resolve(),
         repeat=args.repeat,
         temperature=args.temperature,
         max_tokens=args.max_tokens,
+        max_parallel_participants=args.max_parallel_participants,
+        max_parallel_tasks=args.max_parallel_tasks,
     )
 
-    yaml_path = _write_yaml(cfg)
+    slug = args.model.replace("/", "_").replace("\\", "_")
+    if args.qwen_thinking is not None and "qwen3-8b" in args.model.lower():
+        slug += f"_{args.qwen_thinking}"
+    final_dir = args.out_dir.resolve() / slug
+    if not args.dry_run and not args.overwrite and (final_dir / "tasks").exists():
+        parser.error(f"Task outputs already exist at {final_dir}. Use a new --out-dir or --overwrite.")
+
+    yaml_path = Path("<temporary-config.yaml>") if args.dry_run else _write_yaml(cfg)
     cmd = [
         sys.executable, "-m", "bench.cli", "run",
-        "--config", str(yaml_path),
+        "--config", str(yaml_path), "--repeat", str(args.repeat),
     ]
     for t in chosen:
         cmd += ["--task", t]
@@ -286,23 +313,28 @@ def main() -> None:
         print("Command:")
         print(" ".join(cmd))
         print()
-        print(f"YAML written to: {yaml_path}")
+        print(f"Output directory: {final_dir}")
+        print("Dry run: no model requests or output files created.")
         return
 
     env = os.environ.copy()
     # Make sure the repo root is on PYTHONPATH so 'bench' is importable
     env["PYTHONPATH"] = str(ROOT) + os.pathsep + env.get("PYTHONPATH", "")
     print(f"Launching: {' '.join(cmd)}")
-    rc = subprocess.call(cmd, env=env, cwd=str(ROOT))
+    try:
+        rc = subprocess.call(cmd, env=env, cwd=str(ROOT))
+    finally:
+        yaml_path.unlink(missing_ok=True)
     if rc != 0:
         raise SystemExit(rc)
 
     print()
     print("Done. Score with:")
-    # bench appends a model slug under out_dir; mirror that derivation here.
-    slug = args.model.replace("/", "_").replace("\\", "_")
-    final_dir = args.out_dir / slug
     print(f"  python src/score.py --model-dir {final_dir}")
+    if args.score:
+        base_tasks = list(dict.fromkeys(t.removeprefix("wm_") for t in chosen))
+        subprocess.run([sys.executable, str(ROOT / "src/score.py"), "--model-dir", str(final_dir),
+                        "--tasks", *base_tasks, "--out", str(final_dir / "scores.txt")], check=True, cwd=ROOT)
 
 
 if __name__ == "__main__":

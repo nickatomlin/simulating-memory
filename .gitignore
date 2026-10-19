@@ -57,3 +57,7 @@ secrets.json
 *.log
 .tmp/
 tmp/
+
+# Generated scoring reports and plotting caches
+results/
+.mplcache/

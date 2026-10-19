@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simulating-human-memory"
+version = "0.2.0"
+description = "Memory experiments and offline human-model similarity scoring"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+experiments = [
+  "typer>=0.12", "pyyaml>=6", "matplotlib>=3.7", "openai>=1",
+  "anthropic>=0.49", "sentence-transformers>=3", "sacrebleu>=2.4",
+]
+test = ["scipy>=1.10"]
+
+[project.scripts]
+memory-score = "src.score:main"
+memory-run = "src.run:main"
+
+[tool.setuptools.packages.find]
+include = ["bench*", "src*", "application*"]
+exclude = ["tests*", "runs*", "data*"]
+
+[tool.setuptools.package-data]
+"bench.tasks" = ["prompts/*.txt"]

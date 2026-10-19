@@ -1,0 +1,17 @@
+{
+  "task": "wm_word_recognition",
+  "n_participants": 100,
+  "conditions": [
+    {
+      "condition": "C2",
+      "condition_name": "Human cognitive limits framing",
+      "n": 100,
+      "metrics": {
+        "score_mean": 4.43,
+        "score_min": 0,
+        "score_max": 7,
+        "slot_utilization": 0.7925
+      }
+    }
+  ]
+}

@@ -31,6 +31,10 @@ import argparse
 import json
 import re
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.release_privacy import clean_record
 
 ROOT = Path(__file__).resolve().parents[1]
 HUMAN_ROOT = ROOT / "runs" / "human"
@@ -90,19 +94,7 @@ def build_id_maps(records: list[tuple[Path, dict]]) -> tuple[dict, dict, dict]:
 
 
 def anonymize_record(rec: dict, pmap: dict, smap: dict, rmap: dict) -> dict:
-    new = {}
-    for k, v in rec.items():
-        if k in PII_TOP_LEVEL:
-            continue
-        if k == "participant_id" and isinstance(v, str) and v in pmap:
-            new[k] = pmap[v]
-        elif k == "session_id" and isinstance(v, str) and v in smap:
-            new[k] = smap[v]
-        elif k == "run_id" and isinstance(v, str) and v in rmap:
-            new[k] = rmap[v]
-        else:
-            new[k] = v
-    return new
+    return clean_record(rec, {**pmap, **smap, **rmap})
 
 
 def main() -> None:
